@@ -1,3 +1,13 @@
 <script setup></script>
 
-<template><h2>WhoHome</h2></template>
+<template>
+  <div id="home__who">
+    <h2>WhoHome</h2>
+  </div>
+</template>
+
+<style scoped>
+#home__who {
+  padding: 20px;
+}
+</style>

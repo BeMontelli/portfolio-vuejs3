@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <header>
+  <header id="mainheader">
     <img
       alt="Vue logo"
       class="logo"
@@ -11,3 +11,9 @@
     />
   </header>
 </template>
+
+<style scoped>
+header#mainheader {
+  padding: 20px;
+}
+</style>
