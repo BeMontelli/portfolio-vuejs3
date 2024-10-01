@@ -1,9 +1,13 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import TheBorderHome from '../components/home/TheBorderHome.vue'
+import TheLandingHome from '../components/home/TheLandingHome.vue'
+import WhoHome from '../components/home/WhoHome.vue'
 </script>
 
 <template>
+  <TheBorderHome />
   <main>
-    <TheWelcome />
+    <TheLandingHome />
+    <WhoHome />
   </main>
 </template>
