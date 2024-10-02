@@ -19,6 +19,7 @@
           <li>Docker</li>
         </ul>
       </div>
+      <button class="scrollsite"><i class="bx bx-mouse"></i></button>
     </div>
   </div>
 </template>
@@ -40,6 +41,24 @@
   font-weight: bold;
   font-size: 3rem;
   pointer-events: none;
+}
+
+#home__landing .scrollsite {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  color: var(--color-main);
+  z-index: 10;
+  font-size: 2rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  transition: all ease-in 0.5s;
+}
+#home__landing .scrollsite:hover {
+  bottom: 30px;
+  transition: all ease-in 0.5s;
 }
 
 #home__landing .cols {
