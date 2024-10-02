@@ -77,6 +77,7 @@
   background-image: url('@/assets/img/forest-fog-trees-mountains-crowns-tops.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   border-radius: 20px 0 0 20px;
 }
 
