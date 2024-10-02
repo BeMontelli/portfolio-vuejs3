@@ -13,5 +13,6 @@ header#mainheader .logo {
   left: 0;
   top: 0;
   width: 155px;
+  z-index: 100;
 }
 </style>

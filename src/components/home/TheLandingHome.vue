@@ -25,7 +25,7 @@
 
 <style scoped>
 #home__landing {
-  padding: 20px;
+  height: 100vh;
 }
 
 #home__landing .hello {
@@ -36,6 +36,10 @@
   writing-mode: vertical-rl;
   text-orientation: upright;
   color: var(--color-main);
+  z-index: 10;
+  font-weight: bold;
+  font-size: 3rem;
+  pointer-events: none;
 }
 
 #home__landing .cols {
@@ -44,6 +48,7 @@
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  height: 100%;
 }
 
 #home__landing .col__left {
@@ -53,6 +58,7 @@
   background-image: url('@/assets/img/forest-fog-trees-mountains-crowns-tops.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 20px 0 0 20px;
 }
 
 #home__landing .col__right {
