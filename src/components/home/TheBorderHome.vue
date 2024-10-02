@@ -24,6 +24,7 @@
   border: 20px var(--color-main) solid;
   border-bottom: 20px var(--color-main) solid;
   transition: 0.5s all ease-in;
+  z-index: 9999;
 }
 #bordersite .top {
 }
@@ -55,7 +56,6 @@
 
 #bordersite .bot {
 }
-
 #bordersite .bot:before {
   content: '';
   display: block;
