@@ -1,4 +1,41 @@
-<script setup></script>
+<script>
+export default {
+  mounted() {
+    console.log('mounted')
+    window.addEventListener('click', console.log('click'))
+    window.addEventListener('wheel', this.handleUserScroll)
+    window.addEventListener('touchstart', this.handleTouchStart)
+    window.addEventListener('touchend', this.handleTouchEnd)
+  },
+  beforeUnmount() {
+    window.removeEventListener('wheel', this.handleUserScroll)
+    window.removeEventListener('touchstart', this.handleTouchStart)
+    window.removeEventListener('touchend', this.handleTouchEnd)
+  },
+  methods: {
+    addScrollClass() {
+      document.body.classList.add('scroll')
+    },
+    handleUserScroll(event) {
+      if (event.deltaY > 0) {
+        this.addScrollClass()
+      }
+    },
+    handleTouchStart(event) {
+      console.log('handleTouchStart')
+      this.touchStartY = event.touches[0].clientY
+    },
+    handleTouchEnd(event) {
+      console.log('handleTouchEnd', event)
+      const touchEndY = event.changedTouches[0].clientY
+      if (this.touchStartY > touchEndY + 50) {
+        console.log('this.touchStartY > touchEndY + 50')
+        this.addScrollClass()
+      }
+    }
+  }
+}
+</script>
 
 <template>
   <div id="home__landing">
@@ -21,7 +58,7 @@
           </ul>
         </div>
       </div>
-      <button class="scrollsite"><i class="bx bx-mouse"></i></button>
+      <button class="scrollsite" @click="addScrollClass"><i class="bx bx-mouse"></i></button>
     </div>
   </div>
 </template>
@@ -114,6 +151,11 @@ ul li {
   bottom: 30px;
   transition: all ease-in 0.5s;
 }
+body.scroll #home__landing .scrollsite {
+  opacity: 0;
+  bottom: 10px;
+  transition: all ease-in 0.5s;
+}
 
 #home__landing .cols {
   display: grid;
@@ -121,7 +163,7 @@ ul li {
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  height: 100%;
+  height: calc(100vh - 40px);
 }
 
 #home__landing .col__left {
@@ -133,6 +175,9 @@ ul li {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 20px 0 0 20px;
+}
+body.scroll #home__landing .col__left {
+  border-radius: 20px 0 0 0;
 }
 
 #home__landing .col__right {
