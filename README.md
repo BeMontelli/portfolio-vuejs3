@@ -4,7 +4,6 @@ This template should help get you started developing with Vue 3 in Vite.
 
 # TO DO List
 
-- scroll btn click process
 - responsive
 - Google analytics
 - metas head
