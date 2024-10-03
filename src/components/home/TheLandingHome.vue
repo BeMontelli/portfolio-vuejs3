@@ -58,7 +58,9 @@ export default {
           </ul>
         </div>
       </div>
-      <button class="scrollsite" @click="addScrollClass"><i class="bx bx-mouse"></i></button>
+      <button class="scrollsite" @click="addScrollClass">
+        <i class="bx bx-mouse"></i><span class="font__inconsolata">Scroll pour en savoir plus</span>
+      </button>
     </div>
   </div>
 </template>
@@ -146,6 +148,17 @@ ul li {
   border: none;
   background-color: transparent;
   transition: all ease-in 0.5s;
+}
+#home__landing .scrollsite span {
+  position: absolute;
+  color: var(--color-text);
+  font-size: 12px;
+  width: 190px;
+  line-height: 40px;
+  text-align: left;
+  margin-left: 45px;
+  top: 0;
+  left: 0;
 }
 #home__landing .scrollsite:hover {
   bottom: 30px;
