@@ -18,8 +18,6 @@
           <li>Laravel</li>
           <li>Docker</li>
         </ul>
-        <p>testest seetse tsts.</p>
-        <p>testest seetse tsts.</p>
       </div>
       <button class="scrollsite"><i class="bx bx-mouse"></i></button>
     </div>
