@@ -204,7 +204,7 @@ body.scroll #home__landing .col__left {
 #home__landing .col__content {
   position: relative;
   width: 350px;
-  margin-top: 80px;
+  margin: auto;
 }
 
 #home__landing .col__right h1 {
