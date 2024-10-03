@@ -1,11 +1,18 @@
 <script>
 export default {
+  data() {
+    return {
+      greeting: 'BONJOUR'
+    }
+  },
   mounted() {
-    console.log('mounted')
-    window.addEventListener('click', console.log('click'))
+    //console.log('mounted')
     window.addEventListener('wheel', this.handleUserScroll)
     window.addEventListener('touchstart', this.handleTouchStart)
     window.addEventListener('touchend', this.handleTouchEnd)
+
+    this.updateGreeting()
+    setInterval(this.updateGreeting, 60000)
   },
   beforeUnmount() {
     window.removeEventListener('wheel', this.handleUserScroll)
@@ -13,6 +20,12 @@ export default {
     window.removeEventListener('touchend', this.handleTouchEnd)
   },
   methods: {
+    updateGreeting() {
+      const currentHour = new Date().getHours()
+      console.log(currentHour)
+      if (currentHour >= 18 || currentHour < 5) this.greeting = 'BONSOIR'
+      else this.greeting = 'BONJOUR'
+    },
     addScrollClass() {
       document.body.classList.add('scroll')
     },
@@ -22,14 +35,14 @@ export default {
       }
     },
     handleTouchStart(event) {
-      console.log('handleTouchStart')
+      //console.log('handleTouchStart')
       this.touchStartY = event.touches[0].clientY
     },
     handleTouchEnd(event) {
-      console.log('handleTouchEnd', event)
+      //console.log('handleTouchEnd', event)
       const touchEndY = event.changedTouches[0].clientY
       if (this.touchStartY > touchEndY + 50) {
-        console.log('this.touchStartY > touchEndY + 50')
+        //console.log('this.touchStartY > touchEndY + 50')
         this.addScrollClass()
       }
     }
@@ -40,7 +53,7 @@ export default {
 <template>
   <div id="home__landing">
     <div class="cols">
-      <span class="hello" aria-hidden="true">BONJOUR</span>
+      <span class="hello" aria-hidden="true">{{ greeting }}</span>
       <div class="col__left"></div>
       <div class="col__right">
         <div class="col__content">
