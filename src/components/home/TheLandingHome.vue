@@ -18,6 +18,8 @@
           <li>Laravel</li>
           <li>Docker</li>
         </ul>
+        <p>testest seetse tsts.</p>
+        <p>testest seetse tsts.</p>
       </div>
       <button class="scrollsite"><i class="bx bx-mouse"></i></button>
     </div>
@@ -27,6 +29,18 @@
 <style scoped>
 #home__landing {
   height: 100vh;
+}
+
+h1 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: bolder;
+}
+h2 {
+  font-family: 'Source Serif 4', serif;
+  font-weight: bold;
+}
+ul li {
+  font-family: 'Inconsolata', sans-serif;
 }
 
 #home__landing .hello {
@@ -41,6 +55,8 @@
   font-weight: bold;
   font-size: 3rem;
   pointer-events: none;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bolder;
 }
 
 #home__landing .scrollsite {

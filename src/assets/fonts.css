@@ -1,0 +1,525 @@
+/* ------------- FONTS ------------- */
+
+/* Inconsolata */
+.font__inconsolata {
+  font-family: 'Inconsolata', sans-serif;
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('fonts/Karla/Inconsolata-Light.eot');
+  src:
+    local('Inconsolata Light'),
+    local('Inconsolata-Light'),
+    url('fonts/Inconsolata/Inconsolata-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Inconsolata/Inconsolata-Light.woff2') format('woff2'),
+    url('fonts/Inconsolata/Inconsolata-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('fonts/Karla/Inconsolata-Black.eot');
+  src:
+    local('Inconsolata Black'),
+    local('Inconsolata-Black'),
+    url('fonts/Inconsolata/Inconsolata-Black.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Inconsolata/Inconsolata-Black.woff2') format('woff2'),
+    url('fonts/Inconsolata/Inconsolata-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('fonts/Karla/Inconsolata-Regular.eot');
+  src:
+    local('Inconsolata Regular'),
+    local('Inconsolata-Regular'),
+    url('fonts/Inconsolata/Inconsolata-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Inconsolata/Inconsolata-Regular.woff2') format('woff2'),
+    url('fonts/Inconsolata/Inconsolata-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('fonts/Karla/Inconsolata-Bold.eot');
+  src:
+    local('Inconsolata Bold'),
+    local('Inconsolata-Bold'),
+    url('fonts/Inconsolata/Inconsolata-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Inconsolata/Inconsolata-Bold.woff2') format('woff2'),
+    url('fonts/Inconsolata/Inconsolata-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Karla */
+.font__karla {
+  font-family: 'Karla', sans-serif;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla/Karla-ExtraLight.eot');
+  src:
+    local('Karla ExtraLight'),
+    local('Karla-ExtraLight'),
+    url('fonts/Karla/Karla-ExtraLight.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Karla/Karla-ExtraLight.woff2') format('woff2'),
+    url('fonts/Karla/Karla-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla/Karla-Italic.eot');
+  src:
+    local('Karla Italic'),
+    local('Karla-Italic'),
+    url('fonts/Karla/Karla-Italic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Karla/Karla-Italic.woff2') format('woff2'),
+    url('fonts/Karla/Karla-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla/Karla-SemiBoldItalic.eot');
+  src:
+    local('Karla SemiBold Italic'),
+    local('Karla-SemiBoldItalic'),
+    url('fonts/Karla/Karla-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Karla/Karla-SemiBoldItalic.woff2') format('woff2'),
+    url('fonts/Karla/Karla-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla/Karla-Regular.eot');
+  src:
+    local('Karla Regular'),
+    local('Karla-Regular'),
+    url('fonts/Karla/Karla-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Karla/Karla-Regular.woff2') format('woff2'),
+    url('fonts/Karla/Karla-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla/Karla-MediumItalic.eot');
+  src:
+    local('Karla Medium Italic'),
+    local('Karla-MediumItalic'),
+    url('fonts/Karla/Karla-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Karla/Karla-MediumItalic.woff2') format('woff2'),
+    url('fonts/Karla/Karla-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla/Karla-LightItalic.eot');
+  src:
+    local('Karla Light Italic'),
+    local('Karla-LightItalic'),
+    url('fonts/Karla/Karla-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Karla/Karla-LightItalic.woff2') format('woff2'),
+    url('fonts/Karla/Karla-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla/Karla-Bold.eot');
+  src:
+    local('Karla Bold'),
+    local('Karla-Bold'),
+    url('fonts/Karla/Karla-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Karla/Karla-Bold.woff2') format('woff2'),
+    url('fonts/Karla/Karla-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla/Karla-Medium.eot');
+  src:
+    local('Karla Medium'),
+    local('Karla-Medium'),
+    url('fonts/Karla/Karla-Medium.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Karla/Karla-Medium.woff2') format('woff2'),
+    url('fonts/Karla/Karla-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla/Karla-Light.eot');
+  src:
+    local('Karla Light'),
+    local('Karla-Light'),
+    url('fonts/Karla/Karla-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Karla/Karla-Light.woff2') format('woff2'),
+    url('fonts/Karla/Karla-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla/Karla-SemiBold.eot');
+  src:
+    local('Karla SemiBold'),
+    local('Karla-SemiBold'),
+    url('fonts/Karla/Karla-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Karla/Karla-SemiBold.woff2') format('woff2'),
+    url('fonts/Karla/Karla-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla/Karla-BoldItalic.eot');
+  src:
+    local('Karla Bold Italic'),
+    local('Karla-BoldItalic'),
+    url('fonts/Karla/Karla-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Karla/Karla-BoldItalic.woff2') format('woff2'),
+    url('fonts/Karla/Karla-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('fonts/Karla/Karla-ExtraLightItalic.eot');
+  src:
+    local('Karla ExtraLight Italic'),
+    local('Karla-ExtraLightItalic'),
+    url('fonts/Karla/Karla-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Karla/Karla-ExtraLightItalic.woff2') format('woff2'),
+    url('fonts/Karla/Karla-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Nunito */
+.font__nunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('fonts/Nunito/Nunito-Medium.eot');
+  src:
+    local('Nunito Medium'),
+    local('Nunito-Medium'),
+    url('fonts/Nunito/Nunito-Medium.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Nunito/Nunito-Medium.woff2') format('woff2'),
+    url('fonts/Nunito/Nunito-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'fonts/Nunito/Nunito';
+  src: url('Nunito-BlackItalic.eot');
+  src:
+    local('Nunito Black Italic'),
+    local('Nunito-BlackItalic'),
+    url('fonts/Nunito/Nunito-BlackItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Nunito/Nunito-BlackItalic.woff2') format('woff2'),
+    url('fonts/Nunito/Nunito-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('fonts/Nunito/Nunito-BoldItalic.eot');
+  src:
+    local('Nunito Bold Italic'),
+    local('Nunito-BoldItalic'),
+    url('fonts/Nunito/Nunito-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Nunito/Nunito-BoldItalic.woff2') format('woff2'),
+    url('fonts/Nunito/Nunito-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('fonts/Nunito/Nunito-LightItalic.eot');
+  src:
+    local('Nunito Light Italic'),
+    local('Nunito-LightItalic'),
+    url('fonts/Nunito/Nunito-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Nunito/Nunito-LightItalic.woff2') format('woff2'),
+    url('fonts/Nunito/Nunito-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('fonts/Nunito/Nunito-MediumItalic.eot');
+  src:
+    local('Nunito Medium Italic'),
+    local('Nunito-MediumItalic'),
+    url('fonts/Nunito/Nunito-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Nunito/Nunito-MediumItalic.woff2') format('woff2'),
+    url('fonts/Nunito/Nunito-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('fonts/Nunito/Nunito-Light.eot');
+  src:
+    local('Nunito Light'),
+    local('Nunito-Light'),
+    url('fonts/Nunito/Nunito-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Nunito/Nunito-Light.woff2') format('woff2'),
+    url('fonts/Nunito/Nunito-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('fonts/Nunito/Nunito-Bold.eot');
+  src:
+    local('Nunito Bold'),
+    local('Nunito-Bold'),
+    url('fonts/Nunito/Nunito-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Nunito/Nunito-Bold.woff2') format('woff2'),
+    url('fonts/Nunito/Nunito-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('fonts/Nunito/Nunito-Black.eot');
+  src:
+    local('Nunito Black'),
+    local('Nunito-Black'),
+    url('fonts/Nunito/Nunito-Black.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Nunito/Nunito-Black.woff2') format('woff2'),
+    url('fonts/Nunito/Nunito-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('fonts/Nunito/Nunito-Italic.eot');
+  src:
+    local('Nunito Italic'),
+    local('Nunito-Italic'),
+    url('fonts/Nunito/Nunito-Italic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Nunito/Nunito-Italic.woff2') format('woff2'),
+    url('fonts/Nunito/Nunito-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('fonts/Nunito/Nunito-Regular.eot');
+  src:
+    local('Nunito Regular'),
+    local('Nunito-Regular'),
+    url('fonts/Nunito/Nunito-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Nunito/Nunito-Regular.woff2') format('woff2'),
+    url('fonts/Nunito/Nunito-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Source Serif 4 */
+.font__sourceserif4 {
+  font-family: 'Source Serif 4', serif;
+}
+
+@font-face {
+  font-family: 'Source Serif 4';
+  src: url('fonts/SourceSerif4/SourceSerif4-BoldItalic.eot');
+  src:
+    local('Source Serif 4 Bold Italic'),
+    local('SourceSerif4-BoldItalic'),
+    url('fonts/SourceSerif4/SourceSerif4-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/SourceSerif4/SourceSerif4-BoldItalic.woff2') format('woff2'),
+    url('fonts/SourceSerif4/SourceSerif4-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Serif 4';
+  src: url('fonts/SourceSerif4/SourceSerif4-Black.eot');
+  src:
+    local('Source Serif 4 Black'),
+    local('SourceSerif4-Black'),
+    url('fonts/SourceSerif4/SourceSerif4-Black.eot?#iefix') format('embedded-opentype'),
+    url('fonts/SourceSerif4/SourceSerif4-Black.woff2') format('woff2'),
+    url('fonts/SourceSerif4/SourceSerif4-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Serif 4';
+  src: url('fonts/SourceSerif4/SourceSerif4-Light.eot');
+  src:
+    local('Source Serif 4 Light'),
+    local('SourceSerif4-Light'),
+    url('fonts/SourceSerif4/SourceSerif4-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/SourceSerif4/SourceSerif4-Light.woff2') format('woff2'),
+    url('fonts/SourceSerif4/SourceSerif4-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Serif 4';
+  src: url('fonts/SourceSerif4/SourceSerif4-LightItalic.eot');
+  src:
+    local('Source Serif 4 Light Italic'),
+    local('SourceSerif4-LightItalic'),
+    url('fonts/SourceSerif4/SourceSerif4-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/SourceSerif4/SourceSerif4-LightItalic.woff2') format('woff2'),
+    url('fonts/SourceSerif4/SourceSerif4-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Serif 4';
+  src: url('fonts/SourceSerif4/SourceSerif4-Medium.eot');
+  src:
+    local('Source Serif 4 Medium'),
+    local('SourceSerif4-Medium'),
+    url('fonts/SourceSerif4/SourceSerif4-Medium.eot?#iefix') format('embedded-opentype'),
+    url('fonts/SourceSerif4/SourceSerif4-Medium.woff2') format('woff2'),
+    url('fonts/SourceSerif4/SourceSerif4-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Serif 4';
+  src: url('fonts/SourceSerif4/SourceSerif4-Bold.eot');
+  src:
+    local('Source Serif 4 Bold'),
+    local('SourceSerif4-Bold'),
+    url('fonts/SourceSerif4/SourceSerif4-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/SourceSerif4/SourceSerif4-Bold.woff2') format('woff2'),
+    url('fonts/SourceSerif4/SourceSerif4-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Serif 4';
+  src: url('fonts/SourceSerif4/SourceSerif4-MediumItalic.eot');
+  src:
+    local('Source Serif 4 Medium Italic'),
+    local('SourceSerif4-MediumItalic'),
+    url('fonts/SourceSerif4/SourceSerif4-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/SourceSerif4/SourceSerif4-MediumItalic.woff2') format('woff2'),
+    url('fonts/SourceSerif4/SourceSerif4-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Serif 4';
+  src: url('fonts/SourceSerif4/SourceSerif4-Regular.eot');
+  src:
+    local('Source Serif 4 Regular'),
+    local('SourceSerif4-Regular'),
+    url('fonts/SourceSerif4/SourceSerif4-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/SourceSerif4/SourceSerif4-Regular.woff2') format('woff2'),
+    url('fonts/SourceSerif4/SourceSerif4-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Serif 4';
+  src: url('fonts/SourceSerif4/SourceSerif4-BlackItalic.eot');
+  src:
+    local('Source Serif 4 Black Italic'),
+    local('SourceSerif4-BlackItalic'),
+    url('fonts/SourceSerif4/SourceSerif4-BlackItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/SourceSerif4/SourceSerif4-BlackItalic.woff2') format('woff2'),
+    url('fonts/SourceSerif4/SourceSerif4-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Serif 4';
+  src: url('fonts/SourceSerif4/SourceSerif4-Italic.eot');
+  src:
+    local('Source Serif 4 Italic'),
+    local('SourceSerif4-Italic'),
+    url('fonts/SourceSerif4/SourceSerif4-Italic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/SourceSerif4/SourceSerif4-Italic.woff2') format('woff2'),
+    url('fonts/SourceSerif4/SourceSerif4-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
