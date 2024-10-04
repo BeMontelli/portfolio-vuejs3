@@ -226,6 +226,7 @@ body.scroll #home__landing .col__left {
   top: 0;
   left: 0;
   opacity: 0.5;
+  border-radius: 0 20px 0 0;
 }
 
 #home__landing .col__content {
