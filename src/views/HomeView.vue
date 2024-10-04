@@ -20,7 +20,7 @@ export default {
       <HeaderHome />
       <main>
         <TheLandingHome />
-        <WhoHome />
+        <!-- <WhoHome /> -->
       </main>
       <FooterHome />
     </div>

@@ -80,7 +80,7 @@ export default {
 
 <style scoped>
 #home__landing {
-  height: 100vh;
+  height: calc(100vh - 40px);
 }
 
 h1 {
