@@ -2,7 +2,7 @@
 import HeaderHome from '../components/home/HeaderHome.vue'
 import FooterHome from '../components/home/FooterHome.vue'
 import TheLandingHome from '../components/home/TheLandingHome.vue'
-import WhoHome from '../components/home/WhoHome.vue'
+// import WhoHome from '../components/home/WhoHome.vue'
 </script>
 
 <script>

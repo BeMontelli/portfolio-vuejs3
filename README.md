@@ -11,9 +11,6 @@ https://tagmanager.google.com/?hl=fr#/home
 - responsive
 - who part
 - projects part
-- footer
-  - footer links
-  - links icons
 
 ## Recommended IDE Setup
 
