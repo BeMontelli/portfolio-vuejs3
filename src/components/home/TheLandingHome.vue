@@ -55,6 +55,7 @@ export default {
       <span class="hello" aria-hidden="true">{{ greeting }}</span>
       <div class="col__left"></div>
       <div class="col__right">
+        <div class="col__filter"></div>
         <div class="col__content">
           <h1>Benjamin<br />Montellimard</h1>
           <h2>Développeur Web</h2>
@@ -211,11 +212,27 @@ body.scroll #home__landing .col__left {
   height: 100%;
   display: flex;
   justify-content: center;
+  background-image: url('@/assets/img/montellimard-me.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+#home__landing .col__right .col__filter {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-background);
+  top: 0;
+  left: 0;
+  opacity: 0.5;
 }
 
 #home__landing .col__content {
   position: relative;
-  width: 350px;
+  z-index: 2;
+  width: 400px;
+  padding: 20px;
   margin: auto;
 }
 
