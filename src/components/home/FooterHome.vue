@@ -46,8 +46,8 @@ ul {
 ul li a {
   padding: 10px;
   color: var(--color-text);
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 35px;
+  line-height: 35px;
   transition: all 0.5s ease;
 }
 ul li a:hover {
