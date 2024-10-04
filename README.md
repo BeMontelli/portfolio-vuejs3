@@ -2,11 +2,13 @@
 
 This template should help get you started developing with Vue 3 in Vite.
 
+# Google tag manager
+
+https://tagmanager.google.com/?hl=fr#/home
+
 # TO DO List
 
 - responsive
-- Google analytics
-- metas head
 - who part
 - projects part
 - footer
