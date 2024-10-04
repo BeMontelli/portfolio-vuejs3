@@ -37,7 +37,6 @@ ul {
   flex-wrap: wrap;
   text-transform: uppercase;
   list-style: none;
-  opacity: 0.5;
   display: flex;
   justify-content: center;
   width: 100%;

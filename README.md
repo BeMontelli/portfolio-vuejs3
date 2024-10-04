@@ -8,6 +8,7 @@ https://tagmanager.google.com/?hl=fr#/home
 
 # TO DO List
 
+- sass styles
 - responsive
 - who part
 - projects part
