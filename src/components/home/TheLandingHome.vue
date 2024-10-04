@@ -22,7 +22,6 @@ export default {
   methods: {
     updateGreeting() {
       const currentHour = new Date().getHours()
-      console.log(currentHour)
       if (currentHour >= 18 || currentHour < 5) this.greeting = 'BONSOIR'
       else this.greeting = 'BONJOUR'
     },
