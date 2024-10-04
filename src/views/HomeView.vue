@@ -39,12 +39,12 @@ body.scroll {
 <style scoped>
 .app__container {
   background-color: var(--color-main);
-  padding: 20px;
+  padding: 15px;
 }
 .app__content {
   background-color: var(--color-background);
-  border-radius: 20px;
-  height: calc(100vh - 40px);
+  border-radius: 15px;
+  height: calc(100vh - 30px);
   overflow: hidden;
 }
 body.scroll .app__content {

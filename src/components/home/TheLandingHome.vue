@@ -80,7 +80,7 @@ export default {
 
 <style scoped>
 #home__landing {
-  height: calc(100vh - 40px);
+  height: calc(100vh - 30px);
 }
 
 h1 {
@@ -103,7 +103,7 @@ h2::before {
   height: 5px;
   width: 100px;
   background-color: var(--color-text);
-  border-radius: 20px;
+  border-radius: 15px;
   margin-bottom: 3px;
 }
 h2::after {
@@ -152,7 +152,7 @@ ul li {
 #home__landing .scrollsite {
   position: absolute;
   left: 50%;
-  bottom: 40px;
+  bottom: 30px;
   transform: translateX(-50%);
   color: var(--color-main);
   z-index: 10;
@@ -189,7 +189,7 @@ body.scroll #home__landing .scrollsite {
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  height: calc(100vh - 40px);
+  height: calc(100vh - 30px);
 }
 
 #home__landing .col__left {
@@ -200,10 +200,10 @@ body.scroll #home__landing .scrollsite {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 20px 0 0 20px;
+  border-radius: 15px 0 0 15px;
 }
 body.scroll #home__landing .col__left {
-  border-radius: 20px 0 0 0;
+  border-radius: 15px 0 0 0;
 }
 
 #home__landing .col__right {
@@ -226,7 +226,7 @@ body.scroll #home__landing .col__left {
   top: 0;
   left: 0;
   opacity: 0.5;
-  border-radius: 0 20px 0 0;
+  border-radius: 0 15px 0 0;
 }
 
 #home__landing .col__content {
