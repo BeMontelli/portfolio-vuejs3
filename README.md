@@ -8,10 +8,15 @@ https://tagmanager.google.com/?hl=fr#/home
 
 # TO DO List
 
+- footer copyright etc
 - sass styles
 - responsive
 - who part
 - projects part
+
+## Inspiration
+
+- https://fr.wix.com/blog/portfolios-artistes-designers-inspiration#viewer-h79ah6789298
 
 ## Recommended IDE Setup
 
