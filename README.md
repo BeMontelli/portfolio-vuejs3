@@ -12,7 +12,10 @@ https://tagmanager.google.com/?hl=fr#/home
 - sass styles
 - responsive
 - who part
+- career part
 - projects part
+- aos scroll animate
+- imgs effects waves ?
 
 ## Inspiration
 
