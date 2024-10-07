@@ -13,8 +13,11 @@
           </div>
         </div>
         <div class="col__right">
-          <h2>Développeur Web PHP/JS</h2>
-          <p></p>
+          <h2 class="font__sourceserif4">Développeur Web PHP/JS</h2>
+          <p>
+            Bonjour, je suis Benjamin Montellimard, développeur orienté web sur des langages du type
+            PHP et Javascript.
+          </p>
         </div>
       </div>
     </div>
@@ -52,6 +55,17 @@
     }
   }
   .col__right {
+    line-height: 2rem;
+    margin-left: 5vw;
+    font-size: 1.5rem;
+    h2 {
+      font-weight: bolder;
+      font-style: italic;
+      font-size: 3rem;
+      line-height: 3rem;
+      margin-bottom: 40px;
+      color: var(--color-main);
+    }
   }
 }
 </style>
