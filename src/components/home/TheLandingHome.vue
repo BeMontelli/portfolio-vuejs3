@@ -53,7 +53,7 @@ export default {
   <div id="home__landing">
     <div class="cols">
       <span class="hello" aria-hidden="true">{{ greeting }}</span>
-      <div class="col__left"></div>
+      <div class="col__left"><div class="code__overlay"></div></div>
       <div class="col__right">
         <div class="col__filter"></div>
         <div class="col__content">
@@ -116,7 +116,13 @@ export default {
     cursor: pointer;
     border: none;
     background-color: transparent;
-    transition: all ease-in 0.5s;
+    transition: bottom ease-in 0.5s;
+    @include responsiveTo(lg) {
+      left: 290px;
+    }
+    @include responsiveTo(md) {
+      left: calc(50% - 85px);
+    }
     span {
       position: absolute;
       color: var(--color-text);
@@ -130,7 +136,7 @@ export default {
     }
     &:hover {
       bottom: 30px;
-      transition: all ease-in 0.5s;
+      transition: bottom ease-in 0.5s;
     }
   }
 
@@ -155,7 +161,7 @@ export default {
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url('@/assets/img/montellimard-forest-code.jpg');
+    background-image: url('@/assets/img/montellimard-forest.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -166,6 +172,18 @@ export default {
     }
     @include responsiveTo(sm) {
       height: 280px;
+    }
+    .code__overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('@/assets/img/txtbg.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.5;
     }
   }
 
