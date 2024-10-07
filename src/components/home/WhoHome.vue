@@ -15,8 +15,19 @@
         <div class="col__right">
           <h2 class="font__sourceserif4">Développeur Web PHP/JS</h2>
           <p>
-            Bonjour, je suis Benjamin Montellimard, développeur orienté web sur des langages du type
-            PHP et Javascript.
+            Bonjour, je suis <strong>Benjamin Montellimard</strong>, développeur orienté web sur des
+            langages du type <strong>PHP</strong> et <strong>Javascript</strong>.
+          </p>
+          <p>
+            Originaire du <strong>Puy-en-Velay</strong> (43), je vis et travaille à
+            <strong>Clermont-Ferrand</strong> (63) depuis maintenant cinq ans.
+          </p>
+          <p>
+            Actuellement, je recherche un poste à <strong>Lyon</strong> (69) en tant que développeur
+            spécialisé dans des frameworks PHP comme <strong>Symfony</strong> ou
+            <strong>Laravel</strong>. Avec une solide expérience dans ces environnements, je cherche
+            à rejoindre une équipe dynamique pour relever de nouveaux défis et contribuer à des
+            projets web performants et évolutifs.
           </p>
         </div>
       </div>
@@ -55,9 +66,9 @@
     }
   }
   .col__right {
-    line-height: 2rem;
+    line-height: 1.75rem;
     margin-left: 5vw;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     h2 {
       font-weight: bolder;
       font-style: italic;
@@ -65,6 +76,13 @@
       line-height: 3rem;
       margin-bottom: 40px;
       color: var(--color-main);
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    strong {
+      font-weight: bolder;
+      font-style: italic;
     }
   }
 }
