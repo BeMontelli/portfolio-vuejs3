@@ -14,6 +14,7 @@ https://tagmanager.google.com/?hl=fr#/home
 - projects part
 - aos scroll animate
 - imgs effects waves ?
+- light/sark theme switcher
 
 ## Inspiration
 

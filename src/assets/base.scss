@@ -2,16 +2,18 @@
 :root {
   --vt-c-main-color: #e8af2c;
 
-  --vt-c-white-pure: #ffffff;
+  --vt-c-white-pure: #fff;
   --vt-c-white: #fcf5e5;
 
-  --vt-c-black-pure: #000000;
+  --vt-c-black-pure: #000;
   --vt-c-black: #444444;
 }
 
 /* semantic color variables for this project */
 :root {
   --color-main: var(--vt-c-main-color);
+  --color-background-pure: var(--vt-c-white-pure);
+  --color-background-halfpure: rgba(255, 255, 255, 0.5);
   --color-background: var(--vt-c-white);
   --color-text: var(--vt-c-black);
 }
@@ -19,6 +21,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --color-main: var(--vt-c-main-color);
+    --color-background-pure: var(--vt-c-black-pure);
+    --color-background-halfpure: rgba(0, 0, 0, 0.5);
     --color-background: var(--vt-c-black);
     --color-text: var(--vt-c-white);
   }
@@ -76,4 +80,27 @@ body {
 
 .font__sourceserif4 {
   font-family: 'Source Serif 4', serif;
+}
+
+/* ------------- CONTAINER ------------- */
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  @include responsiveTo(xxl) {
+    width: 1240px;
+  }
+  @include responsiveTo(xl) {
+    width: 950px;
+  }
+  @include responsiveTo(lg) {
+    width: 740px;
+  }
+  @include responsiveTo(md) {
+    width: 550px;
+  }
+  @include responsiveTo(sm) {
+    width: 100%;
+  }
 }

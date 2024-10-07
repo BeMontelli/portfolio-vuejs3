@@ -1,4 +1,4 @@
-import './assets/main.css'
+import './assets/main.scss'
 import 'boxicons/css/boxicons.min.css'
 
 import { createApp } from 'vue'
