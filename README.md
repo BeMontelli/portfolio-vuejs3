@@ -8,7 +8,6 @@ https://tagmanager.google.com/?hl=fr#/home
 
 # TO DO List
 
-- footer copyright etc
 - sass styles
 - responsive
 - who part
