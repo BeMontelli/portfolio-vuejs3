@@ -1,4 +1,12 @@
-<script setup></script>
+<script>
+export default {
+  data() {
+    return {
+      currentYear: new Date().getFullYear()
+    }
+  }
+}
+</script>
 
 <template>
   <footer id="mainfooter">
@@ -20,6 +28,9 @@
         ></a>
       </li>
     </ul>
+    <p class="copyright">
+      © {{ currentYear }} créé par Benjamin Montellimard tous droits réservés.
+    </p>
   </footer>
 </template>
 
@@ -27,7 +38,7 @@
 footer#mainfooter {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 30px 20px 20px;
 }
 
 ul {
@@ -52,5 +63,10 @@ ul li a {
 ul li a:hover {
   color: var(--color-main);
   transition: all 0.5s ease;
+}
+
+.copyright {
+  text-align: center;
+  padding: 20px;
 }
 </style>
