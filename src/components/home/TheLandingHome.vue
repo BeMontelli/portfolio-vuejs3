@@ -100,6 +100,9 @@ export default {
     @include responsiveTo(lg) {
       left: 290px;
     }
+    @include responsiveTo(md) {
+      display: none;
+    }
   }
 
   .scrollsite {
@@ -142,6 +145,10 @@ export default {
     @include responsiveTo(lg) {
       grid-template-columns: 275px 1fr;
     }
+    @include responsiveTo(md) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   .col__left {
@@ -153,6 +160,13 @@ export default {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 15px 0 0 15px;
+    @include responsiveTo(md) {
+      width: 100%;
+      height: 330px;
+    }
+    @include responsiveTo(sm) {
+      height: 280px;
+    }
   }
 
   .col__right {
@@ -165,6 +179,13 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom right;
+    @include responsiveTo(md) {
+      width: 100%;
+      height: calc(100% - 330px);
+    }
+    @include responsiveTo(sm) {
+      height: calc(100% - 280px);
+    }
     .col__filter {
       position: absolute;
       z-index: 1;
@@ -184,6 +205,9 @@ export default {
     width: 400px;
     padding: 20px;
     margin: auto;
+    @include responsiveTo(sm) {
+      width: auto;
+    }
   }
 
   .col__right h1 {
@@ -197,6 +221,10 @@ h1 {
   font-size: 50px;
   line-height: 50px;
   text-transform: uppercase;
+  @include responsiveTo(sm) {
+    font-size: 35px;
+    line-height: 35px;
+  }
 }
 h2 {
   position: relative;
@@ -204,6 +232,9 @@ h2 {
   font-weight: bold;
   font-size: 35px;
   margin: 30px auto;
+  @include responsiveTo(sm) {
+    font-size: 30px;
+  }
 }
 h2::before {
   content: '';
