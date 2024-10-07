@@ -1,0 +1,29 @@
+$grid-breakpoints: (
+  xs: 0,
+  // container 100% - 20px
+  sm: 570px,
+  // 550px container
+  md: 760px,
+  lg: 990px,
+  // 950px container
+  xl: 1240px,
+  // 1200px container
+  xxl: 1440px // 1400px container
+);
+
+@mixin responsiveFrom($breakpoint) {
+  $point: map-get($grid-breakpoints, $breakpoint);
+  @if $point != null {
+    @media (min-width: $point) {
+      @content;
+    }
+  }
+}
+@mixin responsiveTo($breakpoint) {
+  $point: map-get($grid-breakpoints, $breakpoint);
+  @if $point != null {
+    @media (max-width: $point) {
+      @content;
+    }
+  }
+}

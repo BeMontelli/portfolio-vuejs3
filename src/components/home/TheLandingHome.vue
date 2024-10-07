@@ -97,6 +97,9 @@ export default {
     font-weight: bolder;
     font-size: 80px;
     letter-spacing: -42px;
+    @include responsiveTo(lg) {
+      left: 290px;
+    }
   }
 
   .scrollsite {
@@ -135,6 +138,10 @@ export default {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     height: calc(100vh - 30px);
+    overflow: hidden;
+    @include responsiveTo(lg) {
+      grid-template-columns: 275px 1fr;
+    }
   }
 
   .col__left {
