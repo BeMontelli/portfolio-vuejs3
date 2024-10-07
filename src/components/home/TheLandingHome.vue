@@ -78,9 +78,110 @@ export default {
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 #home__landing {
   height: calc(100vh - 30px);
+  .hello {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: var(--color-main);
+    z-index: 10;
+    font-weight: bold;
+    font-size: 3rem;
+    pointer-events: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    font-size: 80px;
+    letter-spacing: -42px;
+  }
+
+  .scrollsite {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    color: var(--color-main);
+    z-index: 10;
+    font-size: 2rem;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    transition: all ease-in 0.5s;
+    span {
+      position: absolute;
+      color: var(--color-text);
+      font-size: 12px;
+      width: 190px;
+      line-height: 40px;
+      text-align: left;
+      margin-left: 45px;
+      top: 0;
+      left: 0;
+    }
+    &:hover {
+      bottom: 30px;
+      transition: all ease-in 0.5s;
+    }
+  }
+
+  .cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: calc(100vh - 30px);
+  }
+
+  .col__left {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('@/assets/img/montellimard-forest-code.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .col__right {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url('@/assets/img/montellimard-me.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    .col__filter {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background-color: var(--color-background);
+      top: 0;
+      left: 0;
+      opacity: 0.5;
+      border-radius: 0 15px 0 0;
+    }
+  }
+
+  .col__content {
+    position: relative;
+    z-index: 2;
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+  }
+
+  .col__right h1 {
+    color: var(--color-main);
+  }
 }
 
 h1 {
@@ -131,113 +232,13 @@ ul li {
   margin-right: 10px;
 }
 
-#home__landing .hello {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  color: var(--color-main);
-  z-index: 10;
-  font-weight: bold;
-  font-size: 3rem;
-  pointer-events: none;
-  font-family: 'Nunito', sans-serif;
-  font-weight: bolder;
-  font-size: 80px;
-  letter-spacing: -42px;
-}
-
-#home__landing .scrollsite {
-  position: absolute;
-  left: 50%;
-  bottom: 30px;
-  transform: translateX(-50%);
-  color: var(--color-main);
-  z-index: 10;
-  font-size: 2rem;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-  transition: all ease-in 0.5s;
-}
-#home__landing .scrollsite span {
-  position: absolute;
-  color: var(--color-text);
-  font-size: 12px;
-  width: 190px;
-  line-height: 40px;
-  text-align: left;
-  margin-left: 45px;
-  top: 0;
-  left: 0;
-}
-#home__landing .scrollsite:hover {
-  bottom: 30px;
-  transition: all ease-in 0.5s;
-}
 body.scroll #home__landing .scrollsite {
   opacity: 0;
   bottom: 10px;
   transition: all ease-in 0.5s;
 }
 
-#home__landing .cols {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  height: calc(100vh - 30px);
-}
-
-#home__landing .col__left {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-image: url('@/assets/img/montellimard-forest-code.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 15px 0 0 15px;
-}
 body.scroll #home__landing .col__left {
   border-radius: 15px 0 0 0;
-}
-
-#home__landing .col__right {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  background-image: url('@/assets/img/montellimard-me.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom right;
-}
-#home__landing .col__right .col__filter {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background-color: var(--color-background);
-  top: 0;
-  left: 0;
-  opacity: 0.5;
-  border-radius: 0 15px 0 0;
-}
-
-#home__landing .col__content {
-  position: relative;
-  z-index: 2;
-  width: 400px;
-  padding: 20px;
-  margin: auto;
-}
-
-#home__landing .col__right h1 {
-  color: var(--color-main);
 }
 </style>

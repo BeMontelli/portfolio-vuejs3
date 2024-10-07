@@ -34,7 +34,7 @@ export default {
   </footer>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 footer#mainfooter {
   display: flex;
   flex-direction: column;
@@ -51,18 +51,17 @@ ul {
   display: flex;
   justify-content: center;
   width: 100%;
-}
-
-ul li a {
-  padding: 10px;
-  color: var(--color-text);
-  font-size: 35px;
-  line-height: 35px;
-  transition: all 0.5s ease;
-}
-ul li a:hover {
-  color: var(--color-main);
-  transition: all 0.5s ease;
+  li a {
+    padding: 10px;
+    color: var(--color-text);
+    font-size: 35px;
+    line-height: 35px;
+    transition: all 0.5s ease;
+    &:hover {
+      color: var(--color-main);
+      transition: all 0.5s ease;
+    }
+  }
 }
 
 .copyright {
