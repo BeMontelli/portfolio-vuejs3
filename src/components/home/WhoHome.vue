@@ -26,7 +26,7 @@
             Actuellement, je recherche un poste à <strong>Lyon</strong> (69) en tant que développeur
             spécialisé dans des frameworks PHP comme <strong>Symfony</strong> ou
             <strong>Laravel</strong>. Avec une solide expérience dans ces environnements, je cherche
-            à rejoindre une équipe dynamique pour relever de nouveaux défis et contribuer à des
+            à rejoindre une nouvelle équipe pour relever de nouveaux défis et contribuer à des
             projets web performants et évolutifs.
           </p>
         </div>
