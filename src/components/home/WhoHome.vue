@@ -44,9 +44,19 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    @include responsiveTo(lg) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   .col__left {
     width: 450px;
+    @include responsiveTo(lg) {
+      margin-bottom: 40px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
     .img {
       width: 350px;
       height: 350px;
@@ -58,17 +68,32 @@
       background-repeat: no-repeat;
       background-position: center;
       border-radius: 100%;
+      @include responsiveTo(xl) {
+        width: 250px;
+        height: 250px;
+      }
     }
     img {
       width: 300px;
       height: 300px;
       border-radius: 100%;
+      @include responsiveTo(xl) {
+        width: 200px;
+        height: 200px;
+      }
     }
   }
   .col__right {
     line-height: 1.75rem;
     margin-left: 5vw;
     font-size: 1.3rem;
+    @include responsiveTo(lg) {
+      width: 100%;
+    }
+    @include responsiveTo(xl) {
+      font-size: 1rem;
+      font-size: 1.1rem;
+    }
     h2 {
       font-weight: bolder;
       font-style: italic;
@@ -76,6 +101,9 @@
       line-height: 3rem;
       margin-bottom: 40px;
       color: var(--color-main);
+      @include responsiveTo(xl) {
+        font-size: 2rem;
+      }
     }
     p {
       margin-bottom: 20px;
