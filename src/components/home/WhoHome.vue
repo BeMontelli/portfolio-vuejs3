@@ -5,7 +5,7 @@
     <div class="container">
       <div class="cols">
         <div class="col__left">
-          <div class="img">
+          <div class="img" data-aos="fade-up">
             <img
               src="@/assets/img/profile-who.jpg"
               alt="Benjamin Montellimard - Développeur PHP/JS"
@@ -13,16 +13,16 @@
           </div>
         </div>
         <div class="col__right">
-          <h2 class="font__sourceserif4">Développeur Web PHP/JS</h2>
-          <p>
+          <h2 data-aos="fade-up" class="font__sourceserif4">Développeur Web PHP/JS</h2>
+          <p data-aos="fade-up">
             Bonjour, je suis <strong>Benjamin Montellimard</strong>, développeur orienté web sur des
             langages du type <strong>PHP</strong> et <strong>Javascript</strong>.
           </p>
-          <p>
+          <p data-aos="fade-up">
             Originaire du <strong>Puy-en-Velay</strong> (43), je vis et travaille à
             <strong>Clermont-Ferrand</strong> (63) depuis maintenant cinq ans.
           </p>
-          <p>
+          <p data-aos="fade-up">
             Actuellement, je recherche un poste à <strong>Lyon</strong> (69) en tant que développeur
             spécialisé dans des frameworks PHP comme <strong>Symfony</strong> ou
             <strong>Laravel</strong>. Avec une solide expérience dans ces environnements, je cherche

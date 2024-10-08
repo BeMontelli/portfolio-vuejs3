@@ -1,6 +1,10 @@
 import './assets/main.scss'
 import 'boxicons/css/boxicons.min.css'
 
+// https://michalsnik.github.io/aos/
+import AOS from 'aos'
+AOS.init()
+
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
