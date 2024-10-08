@@ -296,5 +296,8 @@ body.scroll #home__landing .scrollsite {
 
 body.scroll #home__landing .col__left {
   border-radius: 15px 0 0 0;
+  @include responsiveTo(md) {
+    border-radius: 15px 15px 0 0;
+  }
 }
 </style>
