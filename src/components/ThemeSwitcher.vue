@@ -1,11 +1,49 @@
-<script setup></script>
+<script setup>
+import { ref, onMounted } from 'vue'
+
+const isDarkMode = ref(
+  window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+)
+
+const toggleTheme = () => {
+  if (isDarkMode.value) goLight()
+  else goDark()
+}
+
+const goLight = () => {
+  document.documentElement.classList.remove('dark')
+  isDarkMode.value = false
+}
+const goDark = () => {
+  document.documentElement.classList.add('dark')
+  isDarkMode.value = true
+}
+
+onMounted(() => {
+  const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+
+  if (mediaQuery.matches) goDark()
+  else goLight
+
+  mediaQuery.addEventListener('change', (e) => {
+    if (e.matches) goDark()
+    else goLight
+  })
+})
+</script>
 
 <template>
-  <button id="theme-toggle" type="button" aria-label="Enable dark theme" aria-pressed="false">
-    <i class="bx bx-sun plain darktolight"></i>
-    <i class="bx bxs-sun hover darktolight"></i>
-    <i class="bx bx-moon plain lighttodark" style="display: none"></i>
-    <i class="bx bxs-moon hover lighttodark" style="display: none"></i>
+  <button
+    id="theme-toggle"
+    type="button"
+    aria-label="Enable dark theme"
+    :aria-pressed="isDarkMode"
+    @click="toggleTheme"
+  >
+    <i v-show="isDarkMode" class="bx bx-sun plain darktolight"></i>
+    <i v-show="isDarkMode" class="bx bxs-sun hover darktolight"></i>
+    <i v-show="!isDarkMode" class="bx bx-moon plain lighttodark"></i>
+    <i v-show="!isDarkMode" class="bx bxs-moon hover lighttodark"></i>
   </button>
 </template>
 

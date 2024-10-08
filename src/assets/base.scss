@@ -17,36 +17,24 @@
   --color-background: var(--vt-c-white);
   --color-text: var(--vt-c-black);
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-main: var(--vt-c-main-color);
-    --color-background-pure: var(--vt-c-black-pure);
-    --color-background-halfpure: rgba(0, 0, 0, 0.5);
-    --color-background: var(--vt-c-black);
-    --color-text: var(--vt-c-white);
-  }
+html.dark {
+  --color-main: var(--vt-c-main-color);
+  --color-background-pure: var(--vt-c-black-pure);
+  --color-background-halfpure: rgba(0, 0, 0, 0.5);
+  --color-background: var(--vt-c-black);
+  --color-text: var(--vt-c-white);
 }
 
-/* Light theme */
-/*html,
-html[data-theme="light"] {
-  color-scheme: light;
-  --color-surface-0: white;
-}*/
-
-/* Dark theme override */
-/*html[data-theme="dark"] {
-  color-scheme: dark;
-  --color-surface-0: black;
-}*/
-/* Dark theme (system preference) */
-/*@media (prefers-color-scheme: dark) {
-  html:not([data-theme]) {
-    color-scheme: dark;
-    --color-surface-0: black;
+/* Optionnel : toujours garder support de prefers-color-scheme */
+@media (prefers-color-scheme: dark) {
+  :root:not(.dark) {
+    --color-main: var(--vt-c-main-color);
+    --color-background-pure: var(--vt-c-white-pure);
+    --color-background-halfpure: rgba(255, 255, 255, 0.5);
+    --color-background: var(--vt-c-white);
+    --color-text: var(--vt-c-black);
   }
-}*/
+}
 
 *,
 *::before,
