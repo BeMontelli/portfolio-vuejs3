@@ -9,16 +9,7 @@
 
 @media (hover: hover) {
   a:hover {
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    /*display: flex;
-    place-items: center;*/
-  }
-
-  #app {
-    /*display: grid;*/
+    color: var(--color-main);
+    transition: all 0.5s ease-in;
   }
 }
