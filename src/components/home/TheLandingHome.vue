@@ -193,7 +193,7 @@ export default {
     height: 100%;
     display: flex;
     justify-content: center;
-    background-image: url('@/assets/img/montellimard-me.png');
+    background-image: url('@/assets/img/montellimard-me-light.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -279,7 +279,7 @@ ul {
   flex-wrap: wrap;
   text-transform: uppercase;
   list-style: none;
-  opacity: 0.5;
+  opacity: 1;
 }
 ul li {
   font-size: 25px;
@@ -298,6 +298,27 @@ body.scroll #home__landing .col__left {
   border-radius: 15px 0 0 0;
   @include responsiveTo(md) {
     border-radius: 15px 15px 0 0;
+  }
+}
+
+#home__landing .col__right {
+  background-image: url('@/assets/img/montellimard-me-light.png');
+}
+
+html.dark {
+  ul {
+    opacity: 0.5;
+  }
+  #home__landing .col__right {
+    background-image: url('@/assets/img/montellimard-me.png');
+  }
+}
+@media (prefers-color-scheme: dark) {
+  ul {
+    opacity: 1;
+  }
+  :root:not(.dark) {
+    background-image: url('@/assets/img/montellimard-me-light.png');
   }
 }
 </style>
