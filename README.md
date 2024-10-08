@@ -9,11 +9,9 @@ https://tagmanager.google.com/?hl=fr#/home
 # TO DO List
 
 - responsive
-- who part
 - career part
 - projects part
 - imgs effects waves ?
-- light/sark theme switcher
 
 ## Inspiration
 
