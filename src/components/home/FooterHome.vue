@@ -39,6 +39,7 @@ footer#mainfooter {
   display: flex;
   flex-direction: column;
   padding: 30px 20px 20px;
+  background-color: var(--color-background-halfpure);
 }
 
 ul {

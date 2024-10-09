@@ -4,6 +4,7 @@ import LoaderSite from '../components/LoaderSite.vue'
 import FooterHome from '../components/home/FooterHome.vue'
 import TheLandingHome from '../components/home/TheLandingHome.vue'
 import WhoHome from '../components/home/WhoHome.vue'
+import CareerHome from '../components/home/CareerHome.vue'
 </script>
 
 <script>
@@ -23,6 +24,7 @@ export default {
       <main>
         <TheLandingHome />
         <WhoHome />
+        <CareerHome />
       </main>
       <FooterHome />
     </div>
