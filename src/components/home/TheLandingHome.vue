@@ -80,6 +80,7 @@ export default {
 
 <style scoped lang="scss">
 #home__landing {
+  height: calc(100svh - 30px);
   height: calc(100vh - 30px);
   .hello {
     position: absolute;
@@ -146,6 +147,7 @@ export default {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    height: calc(100svh - 30px);
     height: calc(100vh - 30px);
     overflow: hidden;
     @include responsiveTo(lg) {
@@ -171,7 +173,7 @@ export default {
       height: 330px;
     }
     @include responsiveTo(sm) {
-      height: 280px;
+      height: 260px;
     }
     .code__overlay {
       position: absolute;
@@ -202,7 +204,7 @@ export default {
       height: calc(100% - 330px);
     }
     @include responsiveTo(sm) {
-      height: calc(100% - 280px);
+      height: calc(100% - 260px);
     }
     .col__filter {
       position: absolute;
@@ -225,6 +227,7 @@ export default {
     margin: auto;
     @include responsiveTo(sm) {
       width: auto;
+      top: -50px;
     }
   }
 

@@ -44,6 +44,7 @@ body.scroll {
 .app__content {
   background-color: var(--color-background);
   border-radius: 15px;
+  height: calc(100svh - 30px);
   height: calc(100vh - 30px);
   overflow: hidden;
 }
