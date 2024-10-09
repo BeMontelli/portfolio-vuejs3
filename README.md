@@ -9,7 +9,6 @@ https://tagmanager.google.com/?hl=fr#/home
 # TO DO List
 
 - responsive
-- career part
 - projects part
 - imgs effects waves ?
 - theme switch local storage
