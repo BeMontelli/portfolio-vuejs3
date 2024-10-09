@@ -12,6 +12,9 @@ https://tagmanager.google.com/?hl=fr#/home
 - career part
 - projects part
 - imgs effects waves ?
+- load animation
+- theme switch local storage
+- mobile fix 100vh https://www.alsacreations.com/astuce/lire/1831-corriger-le-probleme-de-hauteur-100vh-sur-mobile.html ?
 
 ## Inspiration
 
