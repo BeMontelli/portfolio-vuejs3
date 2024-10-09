@@ -93,20 +93,32 @@ body {
 /* ------------- CONTAINER ------------- */
 
 .container {
-  width: 1400px;
+  width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
   @include responsiveTo(xxl) {
-    width: 1240px;
-  }
-  @include responsiveTo(xl) {
-    width: 950px;
+    width: 940px;
   }
   @include responsiveTo(lg) {
-    width: 740px;
+    width: 720px;
   }
   @include responsiveTo(md) {
-    width: 550px;
+    width: 480px;
+  }
+  @include responsiveTo(sm) {
+    width: 100%;
+  }
+}
+
+.narrow__container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 20px;
+  @include responsiveTo(lg) {
+    width: 720px;
+  }
+  @include responsiveTo(md) {
+    width: 480px;
   }
   @include responsiveTo(sm) {
     width: 100%;

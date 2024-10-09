@@ -2,107 +2,105 @@
 
 <template>
   <div id="home__career">
-    <div class="container">
+    <div class="narrow__container">
       <h2 data-aos="fade-up" class="font__sourceserif4">Mon parcours</h2>
       <div class="experiences">
-        <div class="container">
-          <ul class="experiences__list">
-            <li class="experience" data-aos="fade-up">
-              <div class="img" data-aos="fade-right">
-                <img src="@/assets/img/wbq-groupe-logo.jpg" alt="Logo Webqam" />
+        <ul class="experiences__list">
+          <li class="experience" data-aos="fade-up">
+            <div class="img" data-aos="fade-right">
+              <img src="@/assets/img/wbq-groupe-logo.jpg" alt="Logo Webqam" />
+            </div>
+            <div class="txts">
+              <h3>Webqam</h3>
+              <span class="dates__role">2016 - 2017 • Développeur web</span>
+              <div class="context">
+                <span class="section__title">Contexte</span>
+                <p>Premier emploi en tant que développeur</p>
               </div>
-              <div class="txts">
-                <h3>Webqam</h3>
-                <span class="dates__role">2016 - 2017 • Développeur web</span>
-                <div class="context">
-                  <span class="section__title">Contexte</span>
-                  <p>Premier emploi en tant que développeur</p>
-                </div>
-                <div class="actions">
-                  <span class="section__title">Actions</span>
-                  <ul>
-                    <li>Développement sites événementiels grands comptes en marque blanche</li>
-                    <li>Développement Drupal/Magento</li>
-                  </ul>
-                </div>
-                <div class="env">
-                  <span class="section__title">Environnement technique</span>
-                  <p>selon projets :</p>
-                  <ul>
-                    <li>PHP (Composer,xampp, Docker,mysql,etc)</li>
-                    <li>JS(Noide,npm,ES6,grunt,etc)</li>
-                    <li>Sublime Text</li>
-                  </ul>
-                </div>
+              <div class="actions">
+                <span class="section__title">Actions</span>
+                <ul>
+                  <li>Développement sites événementiels grands comptes en marque blanche</li>
+                  <li>Développement Drupal/Magento</li>
+                </ul>
               </div>
-            </li>
+              <div class="env">
+                <span class="section__title">Environnement technique</span>
+                <p>selon projets :</p>
+                <ul>
+                  <li>PHP (Composer,xampp, Docker,mysql,etc)</li>
+                  <li>JS(Noide,npm,ES6,grunt,etc)</li>
+                  <li>Sublime Text</li>
+                </ul>
+              </div>
+            </div>
+          </li>
 
-            <li class="experience" data-aos="fade-up">
-              <div class="img" data-aos="fade-left">
-                <img src="@/assets/img/iris-interactive-logo.jpg" alt="Logo Iris Interactive" />
+          <li class="experience" data-aos="fade-up">
+            <div class="img" data-aos="fade-left">
+              <img src="@/assets/img/iris-interactive-logo.jpg" alt="Logo Iris Interactive" />
+            </div>
+            <div class="txts">
+              <h3>Iris Interactive</h3>
+              <span class="dates__role"
+                >2017 - 2019 • Développeur web et application mobile IOS/Android</span
+              >
+              <div class="context">
+                <span class="section__title">Contexte</span>
+                <p>Développeur dans une équipe orientée application mobile et API liées</p>
               </div>
-              <div class="txts">
-                <h3>Iris Interactive</h3>
-                <span class="dates__role"
-                  >2017 - 2019 • Développeur web et application mobile IOS/Android</span
-                >
-                <div class="context">
-                  <span class="section__title">Contexte</span>
-                  <p>Développeur dans une équipe orientée application mobile et API liées</p>
-                </div>
-                <div class="actions">
-                  <span class="section__title">Actions</span>
-                  <ul>
-                    <li>Développement sites événementiels grands comptes en marque blanche</li>
-                    <li>Développement Drupal/Magento</li>
-                  </ul>
-                </div>
-                <div class="env">
-                  <span class="section__title">Environnement technique</span>
-                  <p>selon projets :</p>
-                  <ul>
-                    <li>PHP (Composer,Docker,mysql,mangoDB,etc)</li>
-                    <li>JS(Node,npm,Typescript,Gulp,etc)</li>
-                    <li>PHPStorm</li>
-                  </ul>
-                </div>
+              <div class="actions">
+                <span class="section__title">Actions</span>
+                <ul>
+                  <li>Développement sites événementiels grands comptes en marque blanche</li>
+                  <li>Développement Drupal/Magento</li>
+                </ul>
               </div>
-            </li>
+              <div class="env">
+                <span class="section__title">Environnement technique</span>
+                <p>selon projets :</p>
+                <ul>
+                  <li>PHP (Composer,Docker,mysql,mangoDB,etc)</li>
+                  <li>JS(Node,npm,Typescript,Gulp,etc)</li>
+                  <li>PHPStorm</li>
+                </ul>
+              </div>
+            </div>
+          </li>
 
-            <li class="experience" data-aos="fade-up">
-              <div class="img" data-aos="fade-right">
-                <img src="@/assets/img/coqpit-logo.jpg" alt="Logo Coqpit" />
+          <li class="experience" data-aos="fade-up">
+            <div class="img" data-aos="fade-right">
+              <img src="@/assets/img/coqpit-logo.jpg" alt="Logo Coqpit" />
+            </div>
+            <div class="txts">
+              <h3>Coqpit</h3>
+              <span class="dates__role">2019 - 2024 • Développeur web</span>
+              <div class="context">
+                <span class="section__title">Contexte</span>
+                <p>
+                  Développement sur des projets aux fonctionnalités spécifiques sur les projets de
+                  la société (configurateurs, E-commerce, sites évènementiel ou vitrine)
+                </p>
               </div>
-              <div class="txts">
-                <h3>Coqpit</h3>
-                <span class="dates__role">2019 - 2024 • Développeur web</span>
-                <div class="context">
-                  <span class="section__title">Contexte</span>
-                  <p>
-                    Développement sur des projets aux fonctionnalités spécifiques sur les projets de
-                    la société (configurateurs, E-commerce, sites évènementiel ou vitrine)
-                  </p>
-                </div>
-                <div class="actions">
-                  <span class="section__title">Actions</span>
-                  <ul>
-                    <li>Développement sites événementiels grands comptes en marque blanche</li>
-                    <li>Développement Drupal/Magento</li>
-                  </ul>
-                </div>
-                <div class="env">
-                  <span class="section__title">Environnement technique</span>
-                  <p>selon projets :</p>
-                  <ul>
-                    <li>PHP (Composer,mamp pro, Docker,mysql,etc)</li>
-                    <li>JS(Node,npm,ES6,webpack,etc)</li>
-                    <li>PHPStorm</li>
-                  </ul>
-                </div>
+              <div class="actions">
+                <span class="section__title">Actions</span>
+                <ul>
+                  <li>Développement sites événementiels grands comptes en marque blanche</li>
+                  <li>Développement Drupal/Magento</li>
+                </ul>
               </div>
-            </li>
-          </ul>
-        </div>
+              <div class="env">
+                <span class="section__title">Environnement technique</span>
+                <p>selon projets :</p>
+                <ul>
+                  <li>PHP (Composer,mamp pro, Docker,mysql,etc)</li>
+                  <li>JS(Node,npm,ES6,webpack,etc)</li>
+                  <li>PHPStorm</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
