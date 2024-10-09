@@ -1,5 +1,6 @@
 <script setup>
 import HeaderHome from '../components/home/HeaderHome.vue'
+import LoaderSite from '../components/LoaderSite.vue'
 import FooterHome from '../components/home/FooterHome.vue'
 import TheLandingHome from '../components/home/TheLandingHome.vue'
 import WhoHome from '../components/home/WhoHome.vue'
@@ -15,6 +16,7 @@ export default {
 </script>
 
 <template>
+  <LoaderSite />
   <div class="app__container">
     <div class="app__content">
       <HeaderHome />
