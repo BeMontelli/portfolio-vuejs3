@@ -89,6 +89,7 @@
     font-size: 1.3rem;
     @include responsiveTo(lg) {
       width: 100%;
+      margin-left: 0;
     }
     @include responsiveTo(xl) {
       font-size: 1rem;
