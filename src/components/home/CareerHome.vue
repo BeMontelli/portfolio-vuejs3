@@ -143,6 +143,7 @@
       width: 100%;
       height: 3px;
       bottom: -1px;
+      border-radius: 3px;
       left: 0;
       background-color: var(--color-main);
       z-index: -1;
