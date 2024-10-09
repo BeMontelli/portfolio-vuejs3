@@ -7,7 +7,8 @@ onMounted(() => {
     setTimeout(() => {
       loadingElement.classList.add('onload')
       setTimeout(() => {
-        loadingElement.classList.add('done')
+        loadingElement.classList.add('load__done')
+        document.documentElement.classList.add('load__done')
         setTimeout(() => {
           loadingElement.classList.remove('onload')
         }, 500)
@@ -53,7 +54,7 @@ onMounted(() => {
       opacity: 0;
     }
   }
-  &.done {
+  &.load__done {
     opacity: 0;
     transition: 0.5s all ease-in;
     pointer-events: none;

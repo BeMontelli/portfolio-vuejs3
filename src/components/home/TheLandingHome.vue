@@ -83,9 +83,10 @@ export default {
   height: calc(100svh - 30px);
   height: calc(100vh - 30px);
   .hello {
+    top: 100%;
+    opacity: 0;
     position: absolute;
     left: 50%;
-    top: 50%;
     transform: translateX(-50%) translateY(-50%);
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -98,6 +99,7 @@ export default {
     font-weight: bolder;
     font-size: 80px;
     letter-spacing: -42px;
+    transition: all 0.5s ease-in;
     @include responsiveTo(lg) {
       left: 290px;
     }
@@ -225,6 +227,9 @@ export default {
     width: 400px;
     padding: 20px;
     margin: auto;
+    left: 150px;
+    opacity: 0;
+    transition: all 0.5s ease-in;
     @include responsiveTo(sm) {
       width: auto;
       top: -50px;
@@ -233,6 +238,19 @@ export default {
 
   .col__right h1 {
     color: var(--color-main);
+  }
+}
+
+.load__done #home__landing {
+  .hello {
+    top: 50%;
+    opacity: 1;
+    transition: all 0.5s ease-in;
+  }
+  .col__content {
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease-in;
   }
 }
 
