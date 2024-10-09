@@ -188,8 +188,8 @@
     .img {
       position: relative;
       border-radius: 100%;
-      width: 250px;
-      height: 250px;
+      width: 220px;
+      height: 220px;
       overflow: hidden;
       margin-right: 40px;
       img {
@@ -199,7 +199,7 @@
     }
     .txts {
       position: relative;
-      width: calc(100% - 250px - 40px);
+      width: calc(100% - 220px - 40px);
       ul {
         list-style: none;
         margin: 0;
