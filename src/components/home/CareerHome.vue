@@ -7,6 +7,7 @@
       <div class="experiences">
         <ul class="experiences__list">
           <li class="experience" data-aos="fade-up">
+            <span class="deco__date" aria-hidden="true">2016</span>
             <div class="img" data-aos="fade-right">
               <img src="@/assets/img/wbq-groupe-logo.jpg" alt="Logo Webqam" />
             </div>
@@ -37,6 +38,7 @@
           </li>
 
           <li class="experience" data-aos="fade-up">
+            <span class="deco__date" aria-hidden="true">2017</span>
             <div class="img" data-aos="fade-left">
               <img src="@/assets/img/iris-interactive-logo.jpg" alt="Logo Iris Interactive" />
             </div>
@@ -69,6 +71,7 @@
           </li>
 
           <li class="experience" data-aos="fade-up">
+            <span class="deco__date" aria-hidden="true">2019</span>
             <div class="img" data-aos="fade-right">
               <img src="@/assets/img/coqpit-logo.jpg" alt="Logo Coqpit" />
             </div>
@@ -97,6 +100,25 @@
                   <li>JS(Node,npm,ES6,webpack,etc)</li>
                   <li>PHPStorm</li>
                 </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="experience" data-aos="fade-up">
+            <span class="deco__date" aria-hidden="true">2024</span>
+            <div class="img" data-aos="fade-right">
+              <img src="@/assets/img/futur-exp.jpg" alt="Logo Futur Poste" />
+            </div>
+            <div class="txts">
+              <h3>Développeur web à Lyon</h3>
+              <span class="dates__role">2024 - ? • Développeur web</span>
+              <div class="context">
+                <span class="section__title">Contexte</span>
+                <p>
+                  Aujourd'hui je recherche un poste de développeur web sur <strong>Lyon</strong>.
+                  Mon intention est de rejoindre une équipe travaillant sur des projets basés sur
+                  des frameworks Symfony ou Laravel.
+                </p>
               </div>
             </div>
           </li>
@@ -207,8 +229,26 @@
         }
       }
     }
+    .deco__date {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      font-weight: bolder;
+      font-size: 10rem;
+      line-height: 7rem;
+      color: var(--color-text);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.2;
+      transform: translateX(-50%);
+      @include responsiveTo(md) {
+        top: 260px;
+        line-height: 5rem;
+      }
+    }
     .img {
       position: relative;
+      z-index: 1;
       border-radius: 100%;
       width: 220px;
       height: 220px;
@@ -225,6 +265,7 @@
     }
     .txts {
       position: relative;
+      z-index: 1;
       width: calc(100% - 220px - 40px);
       @include responsiveTo(md) {
         width: 100%;
