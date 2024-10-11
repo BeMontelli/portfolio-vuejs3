@@ -1,0 +1,11 @@
+.cky-revisit-bottom-left {
+  transform: scale(0.7);
+}
+.cky-modal {
+  position: fixed;
+  .cky-footer-wrapper {
+    div:last-child:not(.cky-prefrence-btn-wrapper) {
+      display: none !important;
+    }
+  }
+}
