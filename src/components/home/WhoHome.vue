@@ -39,7 +39,7 @@
 #home__who {
   position: relative;
   padding: 60px 0;
-  background-color: var(--color-background-halfpure);
+  background-color: var(--color-background-alt);
   .cols {
     display: flex;
     align-items: flex-start;

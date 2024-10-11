@@ -4,8 +4,10 @@
 
   --vt-c-white-pure: #fff;
   --vt-c-white: #fcf5e5;
+  --vt-c-white-alt: #eee2c8;
 
   --vt-c-black-pure: #000;
+  --vt-c-black-alt: #262626;
   --vt-c-black: #444444;
 }
 
@@ -15,13 +17,15 @@
   --color-background-pure: var(--vt-c-white-pure);
   --color-background-halfpure: rgba(255, 255, 255, 0.5);
   --color-background: var(--vt-c-white);
-  --color-text: var(--vt-c-black);
+  --color-background-alt: var(--vt-c-white-alt);
+  --color-text: var(--vt-c-black-alt);
 }
 html.dark {
   --color-main: var(--vt-c-main-color);
   --color-background-pure: var(--vt-c-black-pure);
   --color-background-halfpure: rgba(0, 0, 0, 0.5);
   --color-background: var(--vt-c-black);
+  --color-background-alt: var(--vt-c-black-alt);
   --color-text: var(--vt-c-white);
 }
 
@@ -32,6 +36,7 @@ html.dark {
     --color-background-pure: var(--vt-c-white-pure);
     --color-background-halfpure: rgba(255, 255, 255, 0.5);
     --color-background: var(--vt-c-white);
+    --color-background-alt: var(--vt-c-white-alt);
     --color-text: var(--vt-c-black);
   }
 }

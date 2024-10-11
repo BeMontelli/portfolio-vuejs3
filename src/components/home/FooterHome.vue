@@ -39,7 +39,7 @@ footer#mainfooter {
   display: flex;
   flex-direction: column;
   padding: 30px 20px 20px;
-  background-color: var(--color-background-halfpure);
+  background-color: var(--color-background-alt);
   border-radius: 0 0 15px 15px;
 }
 
