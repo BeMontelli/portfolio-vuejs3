@@ -13,7 +13,6 @@ https://tagmanager.google.com/?hl=fr#/home
 - imgs effects waves ?
 - theme switch local storage
 - mobile fix 100vh border
-- who career waves deco ?
 - check analytics
 
 ## Inspiration
