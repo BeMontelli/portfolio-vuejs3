@@ -13,6 +13,7 @@ https://tagmanager.google.com/?hl=fr#/home
 - imgs effects waves ?
 - theme switch local storage
 - check analytics
+- cookieyes w/ anayltics
 
 ## Inspiration
 
