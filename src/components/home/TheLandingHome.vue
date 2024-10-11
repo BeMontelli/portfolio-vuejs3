@@ -149,8 +149,7 @@ export default {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    height: calc(100svh - 30px);
-    height: calc(100vh - 30px);
+    height: calc(100vh - 0px);
     overflow: hidden;
     @include responsiveTo(lg) {
       grid-template-columns: 275px 1fr;
