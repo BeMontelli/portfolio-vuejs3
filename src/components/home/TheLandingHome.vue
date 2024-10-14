@@ -2,6 +2,10 @@
 export default {
   data() {
     return {
+      name: 'Benjamin Montellimard',
+      profession: 'Développeur Web',
+      skills: ['PHP', 'JS', 'HTML', 'CSS', 'Symfony', 'VueJS', 'Laravel', 'Docker'],
+      buttonLabel: 'Scroll pour en savoir plus',
       greeting: 'BONJOUR'
     }
   },
@@ -57,22 +61,15 @@ export default {
       <div class="col__right">
         <div class="col__filter"></div>
         <div class="col__content">
-          <h1>Benjamin<br />Montellimard</h1>
-          <h2>Développeur Web</h2>
+          <h1>{{ name }}</h1>
+          <h2>{{ profession }}</h2>
           <ul>
-            <li>PHP</li>
-            <li>JS</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Symfony</li>
-            <li>VueJS</li>
-            <li>Laravel</li>
-            <li>Docker</li>
+            <li v-for="skill in skills" :key="skill">{{ skill }}</li>
           </ul>
         </div>
       </div>
       <button class="scrollsite" @click="addScrollClass">
-        <i class="bx bx-mouse"></i><span class="font__inconsolata">Scroll pour en savoir plus</span>
+        <i class="bx bx-mouse"></i><span class="font__inconsolata">{{ buttonLabel }}</span>
       </button>
     </div>
   </div>
