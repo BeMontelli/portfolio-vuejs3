@@ -13,8 +13,6 @@ https://tagmanager.google.com/?hl=fr#/home
 - skills part
 - imgs effects waves ?
 - theme switch local storage
-- cookieyes w/ anayltics
-- txt strings to vars
 
 ## Inspiration
 
