@@ -2,6 +2,7 @@
 export default {
   data() {
     return {
+      madeBy: 'créé par Benjamin Montellimard tous droits réservés',
       currentYear: new Date().getFullYear()
     }
   }
@@ -28,9 +29,7 @@ export default {
         ></a>
       </li>
     </ul>
-    <p class="copyright">
-      © {{ currentYear }} créé par Benjamin Montellimard tous droits réservés.
-    </p>
+    <p class="copyright">© {{ currentYear }} {{ madeBy }}.</p>
   </footer>
 </template>
 
