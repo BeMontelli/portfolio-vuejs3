@@ -1,4 +1,78 @@
-<script setup></script>
+<script setup>
+const experiences = [
+  {
+    year: '2016',
+    logo: new URL('@/assets/img/wbq-groupe-logo.jpg', import.meta.url).href,
+    company: 'Webqam',
+    role: '2016 - 2017 • Développeur web',
+    contextTitle: 'Contexte',
+    contextDescription: '<p>Premier emploi en tant que développeur</p>',
+    actionsTitle: 'Actions',
+    actions: [
+      'Développement sites événementiels grands comptes en marque blanche',
+      'Développement Drupal/Magento'
+    ],
+    envTitle: 'Environnement technique',
+    envDescription: 'selon projets :',
+    envDetails: [
+      'PHP (Composer, xampp, Docker, mysql, etc.)',
+      'JS (Node, npm, ES6, grunt, etc.)',
+      'Sublime Text'
+    ]
+  },
+  {
+    year: '2017',
+    logo: new URL('@/assets/img/iris-interactive-logo.jpg', import.meta.url).href,
+    company: 'Iris Interactive',
+    role: '2017 - 2019 • Développeur web et application mobile IOS/Android',
+    contextTitle: 'Contexte',
+    contextDescription:
+      '<p>Développeur dans une équipe orientée application mobile et API liées</p>',
+    actionsTitle: 'Actions',
+    actions: [
+      'Développement sites événementiels grands comptes en marque blanche',
+      'Développement Drupal/Magento'
+    ],
+    envTitle: 'Environnement technique',
+    envDescription: 'selon projets :',
+    envDetails: [
+      'PHP (Composer, Docker, mysql, MongoDB, etc.)',
+      'JS (Node, npm, Typescript, Gulp, etc.)',
+      'PHPStorm'
+    ]
+  },
+  {
+    year: '2019',
+    logo: new URL('@/assets/img/coqpit-logo.jpg', import.meta.url).href,
+    company: 'Coqpit',
+    role: '2019 - 2024 • Développeur web',
+    contextTitle: 'Contexte',
+    contextDescription:
+      '<p>Développement sur des projets aux fonctionnalités spécifiques sur les projets de la société (configurateurs, E-commerce, sites évènementiel ou vitrine)</p>',
+    actionsTitle: 'Actions',
+    actions: [
+      'Développement sites événementiels grands comptes en marque blanche',
+      'Développement Drupal/Magento'
+    ],
+    envTitle: 'Environnement technique',
+    envDescription: 'selon projets :',
+    envDetails: [
+      'PHP (Composer, mamp pro, Docker, mysql, etc.)',
+      'JS (Node, npm, ES6, webpack, etc.)',
+      'PHPStorm'
+    ]
+  },
+  {
+    year: '2024',
+    logo: new URL('@/assets/img/futur-exp.jpg', import.meta.url).href,
+    company: 'Développeur web à Lyon',
+    role: '2024 - ? • Développeur web',
+    contextTitle: 'Contexte',
+    contextDescription:
+      "<p>Aujourd'hui je recherche un poste de développeur web sur Lyon.</p><p>Mon intention est de rejoindre une équipe travaillant sur des projets basés sur des frameworks Symfony ou Laravel.</p>"
+  }
+]
+</script>
 
 <template>
   <div id="home__career">
@@ -6,119 +80,35 @@
       <h2 data-aos="fade-up" class="font__sourceserif4">Mon parcours</h2>
       <div class="experiences">
         <ul class="experiences__list">
-          <li class="experience" data-aos="fade-up">
-            <span class="deco__date" aria-hidden="true">2016</span>
-            <div class="img" data-aos="fade-right">
-              <img src="@/assets/img/wbq-groupe-logo.jpg" alt="Logo Webqam" />
+          <li
+            v-for="experience in experiences"
+            :key="experience.year"
+            class="experience"
+            data-aos="fade-up"
+          >
+            <span class="deco__date" aria-hidden="true">{{ experience.year }}</span>
+            <div class="img" :data-aos="experience.year % 2 === 0 ? 'fade-right' : 'fade-left'">
+              <img :src="experience.logo" :alt="'Logo ' + experience.company" />
             </div>
             <div class="txts">
-              <h3>Webqam</h3>
-              <span class="dates__role">2016 - 2017 • Développeur web</span>
+              <h3>{{ experience.company }}</h3>
+              <span class="dates__role">{{ experience.role }}</span>
               <div class="context">
-                <span class="section__title">Contexte</span>
-                <p>Premier emploi en tant que développeur</p>
+                <span class="section__title">{{ experience.contextTitle }}</span>
+                <div v-html="experience.contextDescription"></div>
               </div>
-              <div class="actions">
-                <span class="section__title">Actions</span>
+              <div class="actions" v-if="experience.actions">
+                <span class="section__title">{{ experience.actionsTitle }}</span>
                 <ul>
-                  <li>Développement sites événementiels grands comptes en marque blanche</li>
-                  <li>Développement Drupal/Magento</li>
+                  <li v-for="action in experience.actions" :key="action">{{ action }}</li>
                 </ul>
               </div>
-              <div class="env">
-                <span class="section__title">Environnement technique</span>
-                <p>selon projets :</p>
+              <div class="env" v-if="experience.envDetails">
+                <span class="section__title">{{ experience.envTitle }}</span>
+                <p>{{ experience.envDescription }}</p>
                 <ul>
-                  <li>PHP (Composer,xampp, Docker,mysql,etc)</li>
-                  <li>JS(Noide,npm,ES6,grunt,etc)</li>
-                  <li>Sublime Text</li>
+                  <li v-for="env in experience.envDetails" :key="env">{{ env }}</li>
                 </ul>
-              </div>
-            </div>
-          </li>
-
-          <li class="experience" data-aos="fade-up">
-            <span class="deco__date" aria-hidden="true">2017</span>
-            <div class="img" data-aos="fade-left">
-              <img src="@/assets/img/iris-interactive-logo.jpg" alt="Logo Iris Interactive" />
-            </div>
-            <div class="txts">
-              <h3>Iris Interactive</h3>
-              <span class="dates__role"
-                >2017 - 2019 • Développeur web et application mobile IOS/Android</span
-              >
-              <div class="context">
-                <span class="section__title">Contexte</span>
-                <p>Développeur dans une équipe orientée application mobile et API liées</p>
-              </div>
-              <div class="actions">
-                <span class="section__title">Actions</span>
-                <ul>
-                  <li>Développement sites événementiels grands comptes en marque blanche</li>
-                  <li>Développement Drupal/Magento</li>
-                </ul>
-              </div>
-              <div class="env">
-                <span class="section__title">Environnement technique</span>
-                <p>selon projets :</p>
-                <ul>
-                  <li>PHP (Composer,Docker,mysql,mangoDB,etc)</li>
-                  <li>JS(Node,npm,Typescript,Gulp,etc)</li>
-                  <li>PHPStorm</li>
-                </ul>
-              </div>
-            </div>
-          </li>
-
-          <li class="experience" data-aos="fade-up">
-            <span class="deco__date" aria-hidden="true">2019</span>
-            <div class="img" data-aos="fade-right">
-              <img src="@/assets/img/coqpit-logo.jpg" alt="Logo Coqpit" />
-            </div>
-            <div class="txts">
-              <h3>Coqpit</h3>
-              <span class="dates__role">2019 - 2024 • Développeur web</span>
-              <div class="context">
-                <span class="section__title">Contexte</span>
-                <p>
-                  Développement sur des projets aux fonctionnalités spécifiques sur les projets de
-                  la société (configurateurs, E-commerce, sites évènementiel ou vitrine)
-                </p>
-              </div>
-              <div class="actions">
-                <span class="section__title">Actions</span>
-                <ul>
-                  <li>Développement sites événementiels grands comptes en marque blanche</li>
-                  <li>Développement Drupal/Magento</li>
-                </ul>
-              </div>
-              <div class="env">
-                <span class="section__title">Environnement technique</span>
-                <p>selon projets :</p>
-                <ul>
-                  <li>PHP (Composer,mamp pro, Docker,mysql,etc)</li>
-                  <li>JS(Node,npm,ES6,webpack,etc)</li>
-                  <li>PHPStorm</li>
-                </ul>
-              </div>
-            </div>
-          </li>
-
-          <li class="experience" data-aos="fade-up">
-            <span class="deco__date" aria-hidden="true">2024</span>
-            <div class="img" data-aos="fade-right">
-              <img src="@/assets/img/futur-exp.jpg" alt="Logo Futur Poste" />
-            </div>
-            <div class="txts">
-              <h3>Développeur web à Lyon</h3>
-              <span class="dates__role">2024 - ? • Développeur web</span>
-              <div class="context">
-                <span class="section__title">Contexte</span>
-                <p>
-                  Aujourd'hui je recherche un poste de développeur web sur <strong>Lyon</strong>.
-                  Mon intention est de rejoindre une équipe travaillant sur des projets basés sur
-                  des frameworks Symfony ou Laravel.
-                </p>
               </div>
             </div>
           </li>
