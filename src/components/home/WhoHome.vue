@@ -1,4 +1,15 @@
-<script setup></script>
+<script setup>
+const profileData = {
+  imgSrc: new URL('@/assets/img/profile-who.jpg', import.meta.url).href,
+  imgAlt: 'Benjamin Montellimard - Développeur PHP/JS',
+  title: 'Développeur Web PHP/JS',
+  paragraphs: [
+    'Bonjour, je suis <strong>Benjamin Montellimard</strong>, développeur orienté web sur des langages du type <strong>PHP</strong> et <strong>Javascript</strong>.',
+    'Originaire du <strong>Puy-en-Velay</strong> (43), je vis et travaille à <strong>Clermont-Ferrand</strong> (63) depuis maintenant cinq ans.',
+    'Actuellement, je recherche un poste à <strong>Lyon</strong> (69) en tant que développeur spécialisé dans des frameworks PHP comme <strong>Symfony</strong> ou <strong>Laravel</strong>. Avec une solide expérience dans ces environnements, je cherche à rejoindre une nouvelle équipe pour relever de nouveaux défis et contribuer à des projets web performants et évolutifs.'
+  ]
+}
+</script>
 
 <template>
   <div id="home__who">
@@ -6,34 +17,31 @@
       <div class="cols">
         <div class="col__left">
           <div class="img" data-aos="fade-up">
-            <img
-              src="@/assets/img/profile-who.jpg"
-              alt="Benjamin Montellimard - Développeur PHP/JS"
-            />
+            <img :src="profileData.imgSrc" :alt="profileData.imgAlt" />
           </div>
         </div>
         <div class="col__right">
-          <h2 data-aos="fade-up" class="font__sourceserif4">Développeur Web PHP/JS</h2>
-          <p data-aos="fade-up">
-            Bonjour, je suis <strong>Benjamin Montellimard</strong>, développeur orienté web sur des
-            langages du type <strong>PHP</strong> et <strong>Javascript</strong>.
-          </p>
-          <p data-aos="fade-up">
-            Originaire du <strong>Puy-en-Velay</strong> (43), je vis et travaille à
-            <strong>Clermont-Ferrand</strong> (63) depuis maintenant cinq ans.
-          </p>
-          <p data-aos="fade-up">
-            Actuellement, je recherche un poste à <strong>Lyon</strong> (69) en tant que développeur
-            spécialisé dans des frameworks PHP comme <strong>Symfony</strong> ou
-            <strong>Laravel</strong>. Avec une solide expérience dans ces environnements, je cherche
-            à rejoindre une nouvelle équipe pour relever de nouveaux défis et contribuer à des
-            projets web performants et évolutifs.
-          </p>
+          <h2 data-aos="fade-up" class="font__sourceserif4">{{ profileData.title }}</h2>
+          <p
+            v-for="(paragraph, index) in profileData.paragraphs"
+            :key="index"
+            data-aos="fade-up"
+            v-html="paragraph"
+          ></p>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<style lang="scss">
+#home__who {
+  .col__right strong {
+    font-weight: bolder;
+    font-style: italic;
+  }
+}
+</style>
 
 <style scoped lang="scss">
 #home__who {
@@ -122,10 +130,6 @@
     }
     p {
       margin-bottom: 20px;
-    }
-    strong {
-      font-weight: bolder;
-      font-style: italic;
     }
   }
 }
