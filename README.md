@@ -10,10 +10,11 @@ https://tagmanager.google.com/?hl=fr#/home
 
 - responsive
 - projects part
+- skills part
 - imgs effects waves ?
 - theme switch local storage
-- check analytics
 - cookieyes w/ anayltics
+- txt strings to vars
 
 ## Inspiration
 
