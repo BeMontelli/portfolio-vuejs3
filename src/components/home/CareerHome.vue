@@ -1,7 +1,7 @@
 <script setup>
 const experiences = [
   {
-    year: '2016',
+    bg: '2016',
     logo: new URL('@/assets/img/wbq-groupe-logo.jpg', import.meta.url).href,
     company: 'Webqam',
     role: '2016 - 2017 • Développeur web',
@@ -21,7 +21,7 @@ const experiences = [
     ]
   },
   {
-    year: '2017',
+    bg: '2017',
     logo: new URL('@/assets/img/iris-interactive-logo.jpg', import.meta.url).href,
     company: 'Iris Interactive',
     role: '2017 - 2019 • Développeur web et application mobile IOS/Android',
@@ -42,7 +42,7 @@ const experiences = [
     ]
   },
   {
-    year: '2019',
+    bg: '2019',
     logo: new URL('@/assets/img/coqpit-logo.jpg', import.meta.url).href,
     company: 'Coqpit',
     role: '2019 - 2024 • Développeur web',
@@ -63,7 +63,7 @@ const experiences = [
     ]
   },
   {
-    year: '2024',
+    bg: '2024',
     logo: new URL('@/assets/img/futur-exp.jpg', import.meta.url).href,
     company: 'Développeur web à Lyon',
     role: '2024 - ? • Développeur web',
@@ -72,7 +72,7 @@ const experiences = [
       "<p>Aujourd'hui je recherche un poste de développeur web sur Lyon.</p><p>Mon intention est de rejoindre une équipe travaillant sur des projets basés sur des frameworks Symfony ou Laravel.</p>"
   },
   {
-    year: 'Cours',
+    bg: 'Cours',
     logo: new URL('@/assets/img/lessons-exp.jpg', import.meta.url).href,
     company: "Expérience d'enseignement",
     role: 'Formateur PHP, JS, HTML/CSS de 2016 à 2024',
@@ -86,6 +86,20 @@ const experiences = [
       '[2020-2021] Enseignement PHP + mise en place environnement de travail (XAMPP/Virtualhost)',
       '[2021] Enseignement Symfony 5.3',
       '[2024] Enseignement Laravel 11 / Vue.JS 3'
+    ]
+  },
+  {
+    bg: 'Stages',
+    logo: new URL('@/assets/img/internship-exp.jpg', import.meta.url).href,
+    company: "Stages d'études",
+    role: 'Développeur web',
+    contextTitle: 'Contexte',
+    contextDescription:
+      '<p>Expériences exécutées au cours de ma formation universitaire (DUT & Licence Professionnelle)</p>',
+    actionsTitle: 'Actions',
+    actions: [
+      '[2015] 10 semaines: Les Perles de vénus Animation de site, Développement et Intégration Web sur le CMS Prestashop et Framework Zend.',
+      "[2016] 12 semaines: Équipes Nationales de l'information au Rectorat de Clermont-Ferrand, développement et intégration d'un site web sur Symfony"
     ]
   }
 ]
@@ -103,7 +117,7 @@ const experiences = [
             class="experience"
             data-aos="fade-up"
           >
-            <span class="deco__date" aria-hidden="true">{{ experience.year }}</span>
+            <span class="deco__bg" aria-hidden="true">{{ experience.bg }}</span>
             <div class="img" :data-aos="experience.year % 2 === 0 ? 'fade-right' : 'fade-left'">
               <img :src="experience.logo" :alt="'Logo ' + experience.company" />
             </div>
@@ -236,7 +250,7 @@ const experiences = [
         }
       }
     }
-    .deco__date {
+    .deco__bg {
       position: absolute;
       left: 50%;
       top: 0;
