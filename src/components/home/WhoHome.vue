@@ -82,12 +82,16 @@ const profileData = {
       justify-content: center;
     }
     .img__bg {
+      position: relative;
+      top: -5px;
+      left: -5px;
       width: 350px;
       height: 350px;
       display: flex;
       z-index: 0;
       justify-content: center;
       align-items: center;
+      filter: url(#filterwave);
       background-image: url('@/assets/img/txtbg-main.svg');
       background-size: cover;
       background-repeat: no-repeat;

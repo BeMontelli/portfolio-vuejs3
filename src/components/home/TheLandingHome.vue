@@ -73,15 +73,6 @@ export default {
       </button>
     </div>
   </div>
-
-  <svg style="width: 0; height: 0">
-    <filter id="filterwave">
-      <feTurbulence baseFrequency="0" numOctaves="10">
-        <animate attributeName="baseFrequency" dur="20s" values="0.01;0" repeatCount="indefinite" />
-      </feTurbulence>
-      <feDisplacementMap scale="10" in="SourceGraphic" />
-    </filter>
-  </svg>
 </template>
 
 <style scoped lang="scss">
