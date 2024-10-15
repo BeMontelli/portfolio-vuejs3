@@ -11,7 +11,6 @@ https://tagmanager.google.com/?hl=fr#/home
 - responsive
 - projects part
 - skills part
-- imgs effects waves ?
 - theme switch local storage
 
 ## Inspiration
