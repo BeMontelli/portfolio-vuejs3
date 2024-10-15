@@ -73,6 +73,15 @@ export default {
       </button>
     </div>
   </div>
+
+  <svg style="width: 0; height: 0">
+    <filter id="filterwave">
+      <feTurbulence baseFrequency="0" numOctaves="10">
+        <animate attributeName="baseFrequency" dur="20s" values="0.01;0" repeatCount="indefinite" />
+      </feTurbulence>
+      <feDisplacementMap scale="10" in="SourceGraphic" />
+    </filter>
+  </svg>
 </template>
 
 <style scoped lang="scss">
@@ -166,6 +175,7 @@ export default {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 15px 0 0 15px;
+    overflow: hidden;
     @include responsiveTo(md) {
       width: 100%;
       height: 330px;
@@ -175,8 +185,10 @@ export default {
     }
     .code__overlay {
       position: absolute;
-      left: 0;
-      top: 0;
+      max-width: 100%;
+      filter: url(#filterwave);
+      left: -10px;
+      top: -10px;
       width: 100%;
       height: 100%;
       background-image: url('@/assets/img/txtbg.svg');
@@ -184,6 +196,7 @@ export default {
       background-repeat: no-repeat;
       background-position: center;
       opacity: 0.5;
+      transform: scale(1.1);
     }
   }
 
