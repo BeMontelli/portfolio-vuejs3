@@ -16,6 +16,7 @@ const profileData = {
     <div class="container">
       <div class="cols">
         <div class="col__left">
+          <div class="img__bg"></div>
           <div class="img" data-aos="fade-up">
             <img :src="profileData.imgSrc" :alt="profileData.imgAlt" />
           </div>
@@ -73,16 +74,18 @@ const profileData = {
   }
   .col__left {
     width: 450px;
+    position: relative;
     @include responsiveTo(lg) {
       margin-bottom: 40px;
       width: 100%;
       display: flex;
       justify-content: center;
     }
-    .img {
+    .img__bg {
       width: 350px;
       height: 350px;
       display: flex;
+      z-index: 0;
       justify-content: center;
       align-items: center;
       background-image: url('@/assets/img/txtbg-main.svg');
@@ -93,6 +96,26 @@ const profileData = {
       @include responsiveTo(xl) {
         width: 250px;
         height: 250px;
+      }
+    }
+    .img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 350px;
+      height: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      @include responsiveTo(xl) {
+        width: 250px;
+        height: 250px;
+      }
+      @include responsiveTo(lg) {
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
     img {
