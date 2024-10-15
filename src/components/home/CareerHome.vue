@@ -70,6 +70,23 @@ const experiences = [
     contextTitle: 'Contexte',
     contextDescription:
       "<p>Aujourd'hui je recherche un poste de développeur web sur Lyon.</p><p>Mon intention est de rejoindre une équipe travaillant sur des projets basés sur des frameworks Symfony ou Laravel.</p>"
+  },
+  {
+    year: 'Cours',
+    logo: new URL('@/assets/img/lessons-exp.jpg', import.meta.url).href,
+    company: "Expérience d'enseignement",
+    role: 'Formateur PHP, JS, HTML/CSS de 2016 à 2024',
+    contextTitle: 'Contexte',
+    contextDescription:
+      '<p>Formations données dans le cadre de mon université puis ensuite pour des organismes de formation comme Human Booster ou Simplon</p>',
+    actionsTitle: 'Actions',
+    actions: [
+      '[2016] Enseignement de Open Graph Protocol + bases SEO/SEA DUT MMI',
+      '[2016] Enseignement Javascript/Jquery MMI',
+      '[2020-2021] Enseignement PHP + mise en place environnement de travail (XAMPP/Virtualhost)',
+      '[2021] Enseignement Symfony 5.3',
+      '[2024] Enseignement Laravel 11 / Vue.JS 3'
+    ]
   }
 ]
 </script>
