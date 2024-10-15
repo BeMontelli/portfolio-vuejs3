@@ -1,6 +1,17 @@
 <script setup>
 const experiences = [
   {
+    bg: '2013',
+    logo: new URL('@/assets/img/courses-exp.jpg', import.meta.url).href,
+    role: '2013 - 2016 • Étudiant en programmation',
+    actionsTitle: 'Parcours',
+    actions: [
+      '[2010-2012] Baccalauréat STI2D',
+      "[2013-2015] DUT Métiers du Multimédia et de l'Internet",
+      "[2015-2016] LP Métiers du Multimédia et de l'Internet"
+    ]
+  },
+  {
     bg: '2016',
     logo: new URL('@/assets/img/wbq-groupe-logo.jpg', import.meta.url).href,
     company: 'Webqam',
