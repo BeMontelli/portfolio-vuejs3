@@ -84,6 +84,7 @@ const experiences = [
   },
   {
     bg: 'Cours',
+    fade: true,
     logo: new URL('@/assets/img/lessons-exp.jpg', import.meta.url).href,
     company: "Expérience d'enseignement",
     role: 'Formateur PHP, JS, HTML/CSS de 2016 à 2024',
@@ -101,6 +102,7 @@ const experiences = [
   },
   {
     bg: 'Stages',
+    fade: true,
     logo: new URL('@/assets/img/internship-exp.jpg', import.meta.url).href,
     company: "Stages d'études",
     role: 'Développeur web',
@@ -126,6 +128,7 @@ const experiences = [
             v-for="experience in experiences"
             :key="experience.year"
             class="experience"
+            :class="experience.fade ? 'fade' : 'classic'"
             data-aos="fade-up"
           >
             <span class="deco__bg" aria-hidden="true">{{ experience.bg }}</span>
@@ -364,6 +367,13 @@ const experiences = [
     .env {
       position: relative;
       margin-top: 20px;
+    }
+
+    &.fade {
+      .dates__role {
+        background-color: var(--color-background-halfpure);
+        color: var(--vt-c-white);
+      }
     }
   }
 }
