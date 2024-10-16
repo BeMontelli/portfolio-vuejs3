@@ -2,120 +2,131 @@
 <template>
   <div class="section__texts">
     <div class="container">
-      <h1 class="privacy-policy-h1">Privacy Policy</h1>
+      <h1 class="privacy-policy-h1">Politique de confidentialité</h1>
 
       <h2 class="privacy-policy-h2">
-        <span>Privacy Policy last Updated On 16-Oct-2024</span> <br /><span
-          >Effective Date 16-Oct-2024</span
+        <span
+          >Politique de confidentialité mise à jour pour la dernière fois le 16 octobre 2024</span
         >
+        <br /><span>Date d'entrée en vigueur le 16 octobre 2024</span>
       </h2>
 
       <p class="privacy-policy-p">
-        This Privacy Policy describes the policies of Montellimard Web, Clermont-Ferrand, Auvergne
-        Rhône Alpes 63000, France, email: benjmontellimard@gmail.com, phone: 0605344577 on the
-        collection, use and disclosure of your information that we collect when you use our website
-        ( https://montellimard.fr ). (the “Service”). By accessing or using the Service, you are
-        consenting to the collection, use and disclosure of your information in accordance with this
-        Privacy Policy. If you do not consent to the same, please do not access or use the Service.
+        Cette politique de confidentialité décrit les politiques de Montellimard Web,
+        Clermont-Ferrand, Auvergne Rhône Alpes 63000, France, email : benjmontellimard@gmail.com,
+        téléphone : 0605344577 sur la collecte, l'utilisation et la divulgation de vos informations
+        que nous collectons lorsque vous utilisez notre site Web ( https://montellimard.fr ). (le «
+        Service »). En accédant ou en utilisant le Service, vous consentez à la collecte, à
+        l'utilisation et à la divulgation de vos informations conformément à la présente Politique
+        de confidentialité. Si vous n'y consentez pas, veuillez ne pas accéder ni utiliser le
+        Service.
       </p>
 
       <p class="privacy-policy-p">
-        We may modify this Privacy Policy at any time without any prior notice to you and will post
-        the revised Privacy Policy on the Service. The revised Policy will be effective 180 days
-        from when the revised Policy is posted in the Service and your continued access or use of
-        the Service after such time will constitute your acceptance of the revised Privacy Policy.
-        We therefore recommend that you periodically review this page.
+        Nous pouvons modifier cette Politique de confidentialité à tout moment sans préavis et
+        publierons la Politique de confidentialité révisée sur le Service. La politique révisée
+        entrera en vigueur 180 jours à compter de sa publication sur le Service et votre accès ou
+        utilisation continue du Service après cette période constituera votre acceptation de la
+        politique de confidentialité révisée. Nous vous recommandons donc de consulter régulièrement
+        cette page.
       </p>
 
       <ol class="privacy-policy-ol">
         <li>
-          <h2 class="privacy-policy-h2">How We Use Your Information:</h2>
-          <p class="privacy-policy-p">
-            We will use the information that we collect about you for the following purposes:
+          <h2 class="privacy-policy-h2">Comment nous utilisons vos informations :</h2>
+          <p class="privacy-policy- p">
+            Nous utiliserons les informations que nous recueillons à votre sujet aux fins suivantes
+            :
           </p>
           <ol class="privacy-policy-ol">
-            <li>Customer feedback collection</li>
+            <li>Collecte des commentaires des clients</li>
 
-            <li>Site protection</li>
+            <li>Protection du LoaderSite</li>
           </ol>
           <p class="privacy-policy-p">
-            If we want to use your information for any other purpose, we will ask you for consent
-            and will use your information only on receiving your consent and then, only for the
-            purpose(s) for which grant consent unless we are required to do otherwise by law.
+            Si nous souhaitons utiliser vos informations à d'autres fins, nous vous demanderons
+            votre consentement et n'utiliserons vos informations qu'après avoir reçu votre
+            consentement, puis, uniquement aux fins pour lesquelles vous donnez votre consentement,
+            sauf si la loi nous oblige à agir autrement.
           </p>
         </li>
 
         <li>
-          <h2 class="privacy-policy-h2">How We Share Your Information:</h2>
+          <h2 class="privacy-policy-h2">Comment nous partageons vos informations :</h2>
 
           <p class="privacy-policy-p">
-            We will not transfer your personal information to any third party without seeking your
-            consent, except in limited circumstances as described below:
+            Nous ne transférerons pas vos informations personnelles à des tiers sans demander votre
+            consentement, sauf dans des circonstances limitées telles que décrites ci-dessous :
           </p>
           <ol class="privacy-policy-ol">
-            <li>Analytics</li>
+            <li>Analyse</li>
           </ol>
 
           <p class="privacy-policy-p">
-            We require such third party’s to use the personal information we transfer to them only
-            for the purpose for which it was transferred and not to retain it for longer than is
-            required for fulfilling the said purpose.
+            Nous exigeons que ces tiers utilisent les informations personnelles que nous leur
+            transférons uniquement aux fins pour lesquelles elles ont été transférées et qu'ils ne
+            les conservent pas plus longtemps que nécessaire pour atteindre l'objectif en question.
           </p>
           <p class="privacy-policy-p">
-            We may also disclose your personal information for the following: (1) to comply with
-            applicable law, regulation, court order or other legal process; (2) to enforce your
-            agreements with us, including this Privacy Policy; or (3) to respond to claims that your
-            use of the Service violates any third-party rights. If the Service or our company is
-            merged or acquired with another company, your information will be one of the assets that
-            is transferred to the new owner.
-          </p>
-        </li>
-
-        <li>
-          <h2 class="privacy-policy-h2">Your Rights:</h2>
-          <p class="privacy-policy-p">
-            Depending on the law that applies, you may have a right to access and rectify or erase
-            your personal data or receive a copy of your personal data, restrict or object to the
-            active processing of your data, ask us to share (port) your personal information to
-            another entity, withdraw any consent you provided to us to process your data, a right to
-            lodge a complaint with a statutory authority and such other rights as may be relevant
-            under applicable laws. To exercise these rights, you can write to us at
-            benjmontellimard@gmail.com. We will respond to your request in accordance with
-            applicable law.
-          </p>
-
-          <p class="privacy-policy-p">
-            Do note that if you do not allow us to collect or process the required personal
-            information or withdraw the consent to process the same for the required purposes, you
-            may not be able to access or use the services for which your information was sought.
-          </p>
-        </li>
-        <li>
-          <h2 class="privacy-policy-h2">Cookies Etc.</h2>
-          <p class="privacy-policy-p">
-            To learn more about how we use these and your choices in relation to these tracking
-            technologies, please refer to our cookie policy tool.
+            Nous pouvons également divulguer vos informations personnelles pour les raisons
+            suivantes : (1) pour nous conformer à la loi, à la réglementation, à une ordonnance du
+            tribunal ou à toute autre procédure légale en vigueur ; (2) pour faire respecter vos
+            accords avec nous, y compris la présente politique de confidentialité ; ou (3) pour
+            répondre aux réclamations selon lesquelles votre utilisation du Service viole les droits
+            d'un tiers. Si le Service ou notre société est fusionné ou acquis avec une autre
+            société, vos informations seront l'un des actifs transférés au nouveau propriétaire.
           </p>
         </li>
 
         <li>
-          <h2 class="privacy-policy-h2">Security:</h2>
+          <h2 class="privacy-policy-h2">Vos droits :</h2>
           <p class="privacy-policy-p">
-            The security of your information is important to us and we will use reasonable security
-            measures to prevent the loss, misuse or unauthorized alteration of your information
-            under our control. However, given the inherent risks, we cannot guarantee absolute
-            security and consequently, we cannot ensure or warrant the security of any information
-            you transmit to us and you do so at your own risk.
+            Selon la loi applicable, vous pouvez avoir le droit d'accéder à vos données personnelles
+            et de les rectifier ou de les effacer ou de recevoir une copie de vos données
+            personnelles, de restreindre ou de vous opposer au traitement actif de vos données, de
+            nous demander de partager (porter) vos informations personnelles à une autre entité, de
+            retirer tout consentement que vous nous avez donné pour traiter vos données, le droit de
+            déposer une plainte auprès d'une autorité statutaire et tout autre droit pouvant être
+            pertinent en vertu des lois applicables. Pour exercer ces droits, vous pouvez nous
+            écrire à benjmontellimard@gmail.com. Nous répondrons à votre demande conformément à la
+            loi applicable.
+          </p>
+
+          <p class="privacy-policy-p">
+            Veuillez noter que si vous ne nous autorisez pas à collecter ou à traiter les
+            informations personnelles requises ou si vous retirez votre consentement à les traiter
+            aux fins requises, vous risquez de ne pas pouvoir accéder ou utiliser les services pour
+            lesquels vos informations ont été demandées.
+          </p>
+        </li>
+        <li>
+          <h2 class="privacy-policy-h2">Cookies, etc.</h2>
+          <p class="privacy-policy-p">
+            Pour en savoir plus sur la manière dont nous les utilisons et sur vos choix concernant
+            ces technologies de suivi, veuillez vous référer à notre outil de politique en matière
+            de cookies.
           </p>
         </li>
 
         <li>
-          <h2 class="privacy-policy-h2">Grievance / Data Protection Officer:</h2>
+          <h2 class="privacy-policy-h2">Sécurité :</h2>
           <p class="privacy-policy-p">
-            If you have any queries or concerns about the processing of your information that is
-            available with us, you may email our Grievance Officer at Montellimard Web,
-            Clermont-Ferrand, email: benjmontellimard@gmail.com. We will address your concerns in
-            accordance with applicable law.
+            La sécurité de vos informations est importante pour nous et nous utiliserons des mesures
+            de sécurité raisonnables pour empêcher la perte, l'utilisation abusive ou la
+            modification non autorisée de vos informations sous notre contrôle. Cependant, compte
+            tenu des risques inhérents, nous ne pouvons pas garantir une sécurité absolue et, par
+            conséquent, nous ne pouvons pas assurer ou garantir la sécurité des informations que
+            vous nous transmettez et vous le faites à vos propres risques.
+          </p>
+        </li>
+
+        <li>
+          <h2 class="privacy-policy-h2">Délégué aux réclamations/à la protection des données :</h2>
+          <p class="privacy-policy-p">
+            Si vous avez des questions ou des préoccupations concernant le traitement de vos
+            informations dont nous disposons, vous pouvez envoyer un e-mail à notre responsable des
+            réclamations à Montellimard Web, Clermont-Ferrand, e-mail : benjmontellimard@gmail.com.
+            Nous répondrons à vos préoccupations conformément à la loi en vigueur.
           </p>
         </li>
       </ol>
