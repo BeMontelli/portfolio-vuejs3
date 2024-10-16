@@ -5,9 +5,7 @@
       <h1 class="privacy-policy-h1">Politique de confidentialité</h1>
 
       <h2 class="privacy-policy-h2">
-        <span
-          >Politique de confidentialité mise à jour pour la dernière fois le 16 octobre 2024</span
-        >
+        <span>Mise à jour pour la dernière fois le 16 octobre 2024</span>
         <br /><span>Date d'entrée en vigueur le 16 octobre 2024</span>
       </h2>
 
@@ -38,11 +36,10 @@
             Nous utiliserons les informations que nous recueillons à votre sujet aux fins suivantes
             :
           </p>
-          <ol class="privacy-policy-ol">
+          <ul class="privacy-policy-ul">
             <li>Collecte des commentaires des clients</li>
-
             <li>Protection du LoaderSite</li>
-          </ol>
+          </ul>
           <p class="privacy-policy-p">
             Si nous souhaitons utiliser vos informations à d'autres fins, nous vous demanderons
             votre consentement et n'utiliserons vos informations qu'après avoir reçu votre
@@ -58,9 +55,9 @@
             Nous ne transférerons pas vos informations personnelles à des tiers sans demander votre
             consentement, sauf dans des circonstances limitées telles que décrites ci-dessous :
           </p>
-          <ol class="privacy-policy-ol">
+          <ul class="privacy-policy-ul">
             <li>Analyse</li>
-          </ol>
+          </ul>
 
           <p class="privacy-policy-p">
             Nous exigeons que ces tiers utilisent les informations personnelles que nous leur
@@ -137,5 +134,56 @@
 <style scoped lang="scss">
 .section__texts {
   position: relative;
+
+  h1 {
+    padding-top: 40px;
+    color: var(--color-main);
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: var(--color-main);
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 20px;
+  }
+
+  ol.privacy-policy-ol {
+    margin: 20px 0 0;
+    padding: 0 0 0 20px;
+    li {
+      margin-bottom: 20px;
+    }
+  }
+
+  ul.privacy-policy-ul {
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+    li {
+      &:before {
+        content: '•';
+        padding-right: 10px;
+        color: var(--color-main);
+        right: 0;
+      }
+      @include responsiveTo(md) {
+        padding-right: 0;
+        padding-left: 10px;
+        &:before {
+          right: inherit;
+        }
+      }
+    }
+  }
+
+  p {
+  }
 }
 </style>
