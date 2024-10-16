@@ -5,7 +5,7 @@ import LogoHeader from '../LogoHeader.vue'
 
 <template>
   <header id="mainheader">
-    <LogoHeader />
+    <router-link :to="{ name: 'home' }"><LogoHeader /></router-link>
 
     <ThemeSwitcher />
   </header>
@@ -13,23 +13,16 @@ import LogoHeader from '../LogoHeader.vue'
 
 <style scoped lang="scss">
 header#mainheader .logo {
-  margin: 60px 0 0 60px;
   position: fixed;
   left: -50px;
   top: 0;
   opacity: 0;
-  width: 155px;
   z-index: 100;
+  margin: 40px 0 0 40px;
+  width: 80px;
   transition: all 0.5s ease-in;
-
-  @include responsiveTo(sm) {
-    width: 120px;
-  }
-
   &.scroll {
     margin: 20px 0 0 40px;
-    width: 80px;
-    transition: all 0.5s ease-in;
   }
 }
 
