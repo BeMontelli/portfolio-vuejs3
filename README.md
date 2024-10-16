@@ -12,6 +12,9 @@ https://tagmanager.google.com/?hl=fr#/home
 - projects part
 - skills part
 - theme switch local storage
+- privacy policy page launcher
+- privacy policy page end
+- fix overflow pages bottom
 
 ## Inspiration
 

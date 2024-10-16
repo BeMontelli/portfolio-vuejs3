@@ -12,12 +12,11 @@
       <p class="privacy-policy-p">
         Cette politique de confidentialité décrit les politiques de Montellimard Web,
         Clermont-Ferrand, Auvergne Rhône Alpes 63000, France, email : benjmontellimard@gmail.com,
-        téléphone : 0605344577 sur la collecte, l'utilisation et la divulgation de vos informations
-        que nous collectons lorsque vous utilisez notre site Web ( https://montellimard.fr ). (le «
-        Service »). En accédant ou en utilisant le Service, vous consentez à la collecte, à
-        l'utilisation et à la divulgation de vos informations conformément à la présente Politique
-        de confidentialité. Si vous n'y consentez pas, veuillez ne pas accéder ni utiliser le
-        Service.
+        sur la collecte, l'utilisation et la divulgation de vos informations que nous collectons
+        lorsque vous utilisez notre site Web ( https://montellimard.fr ). (le « Service »). En
+        accédant ou en utilisant le Service, vous consentez à la collecte, à l'utilisation et à la
+        divulgation de vos informations conformément à la présente Politique de confidentialité. Si
+        vous n'y consentez pas, veuillez ne pas accéder ni utiliser le Service.
       </p>
 
       <p class="privacy-policy-p">
@@ -38,7 +37,7 @@
           </p>
           <ul class="privacy-policy-ul">
             <li>Collecte des commentaires des clients</li>
-            <li>Protection du LoaderSite</li>
+            <li>Protection du site</li>
           </ul>
           <p class="privacy-policy-p">
             Si nous souhaitons utiliser vos informations à d'autres fins, nous vous demanderons
@@ -181,9 +180,6 @@
         }
       }
     }
-  }
-
-  p {
   }
 }
 </style>
