@@ -3,6 +3,7 @@ export default {
   data() {
     return {
       madeBy: 'créé par Benjamin Montellimard tous droits réservés',
+      privacyPolicy: 'Politique de confidentialité',
       currentYear: new Date().getFullYear()
     }
   }
@@ -29,6 +30,13 @@ export default {
         ></a>
       </li>
     </ul>
+    <nav>
+      <ul class="navlinks">
+        <li>
+          <router-link :to="{ name: 'privacy-policy' }">{{ privacyPolicy }}</router-link>
+        </li>
+      </ul>
+    </nav>
     <p class="copyright">© {{ currentYear }} {{ madeBy }}.</p>
   </footer>
 </template>
@@ -45,6 +53,36 @@ footer#mainfooter {
     radial-gradient(134.16px at 50% -120px, #0000 99%, #000 101%) 50% 60px/240px 100% repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);
+
+  nav {
+    padding: 20px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      li {
+        width: auto;
+      }
+    }
+    a {
+      font-size: 1rem;
+      line-height: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: none;
+      transition: all 0.5s ease;
+      &:hover {
+        text-decoration: underline;
+        color: var(--color-main);
+        transition: all 0.5s ease;
+      }
+    }
+  }
 }
 
 ul {
