@@ -15,6 +15,7 @@ https://tagmanager.google.com/?hl=fr#/home
 - privacy policy page launcher
 - privacy policy page end
 - fix overflow pages bottom
+- links click animation and return to top
 
 ## Inspiration
 

@@ -30,7 +30,7 @@ export default {
     </div>
   </div>
 
-  <svg style="width: 0; height: 0">
+  <svg style="width: 0; height: 0; position: absolute; pointer-events: none">
     <filter id="filterwave">
       <feTurbulence baseFrequency="0" numOctaves="1">
         <animate
@@ -48,7 +48,7 @@ export default {
 
 <style>
 body.scroll {
-  overflow: initial;
+  overflow-y: initial;
 }
 </style>
 
@@ -69,6 +69,6 @@ body {
 }
 body.scroll .app__content {
   height: auto;
-  overflow: initial;
+  overflow-y: initial;
 }
 </style>
