@@ -1,7 +1,7 @@
 <script setup>
 import HeaderHome from '../components/home/HeaderHome.vue'
 import LoaderSite from '../components/LoaderSite.vue'
-import FooterHome from '../components/home/FooterHome.vue'
+import FooterGeneral from '../components/general/FooterGeneral.vue'
 import TheLandingHome from '../components/home/TheLandingHome.vue'
 import WhoHome from '../components/home/WhoHome.vue'
 import CareerHome from '../components/home/CareerHome.vue'
@@ -26,7 +26,7 @@ export default {
         <WhoHome />
         <CareerHome />
       </main>
-      <FooterHome />
+      <FooterGeneral />
     </div>
   </div>
 
@@ -47,15 +47,15 @@ export default {
 </template>
 
 <style>
-body {
-  overflow: hidden;
-}
 body.scroll {
   overflow: initial;
 }
 </style>
 
 <style scoped>
+body {
+  overflow: hidden;
+}
 .app__container {
   background-color: var(--color-main);
   padding: 15px;
