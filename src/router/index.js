@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import PrivacyPolicy from '../views/PrivacyPolicy.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -7,8 +8,12 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView,
-      meta: { bodyClass: 'bg-light' }
+      component: HomeView
+    },
+    {
+      path: '/politique-de-confidentialite',
+      name: 'privacy-policy',
+      component: PrivacyPolicy
     }
   ]
 })
