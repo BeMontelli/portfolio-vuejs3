@@ -12,12 +12,27 @@ import SectionTexts from '../components/general/SectionTexts.vue'
     <div class="app__content">
       <HeaderGeneral />
       <main>
-        <TheLandingGeneral />
+        <TheLandingGeneral title="Politique de confidentialité" />
         <SectionTexts />
       </main>
       <FooterGeneral />
     </div>
   </div>
+
+  <svg style="width: 0; height: 0; position: absolute; pointer-events: none">
+    <filter id="filterwave">
+      <feTurbulence baseFrequency="0" numOctaves="1">
+        <animate
+          attributeName="baseFrequency"
+          dur="20s"
+          keyTimes="0;0.5;1"
+          values="0.05;0.025;0.05"
+          repeatCount="indefinite"
+        />
+      </feTurbulence>
+      <feDisplacementMap scale="10" in="SourceGraphic" />
+    </filter>
+  </svg>
 </template>
 
 <style>

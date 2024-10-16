@@ -2,12 +2,10 @@
 <template>
   <div class="section__texts">
     <div class="container">
-      <h1 class="privacy-policy-h1">Politique de confidentialité</h1>
-
-      <h2 class="privacy-policy-h2">
+      <span class="privacy-policy-info">
         <span>Mise à jour pour la dernière fois le 16 octobre 2024</span>
         <br /><span>Date d'entrée en vigueur le 16 octobre 2024</span>
-      </h2>
+      </span>
 
       <p class="privacy-policy-p">
         Cette politique de confidentialité décrit les politiques de Montellimard Web,
@@ -133,15 +131,16 @@
 <style scoped lang="scss">
 .section__texts {
   position: relative;
+  padding-top: 40px;
 
-  h1 {
-    padding-top: 40px;
-    color: var(--color-main);
+  .privacy-policy-info {
+    opacity: 0.65;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
     font-weight: bolder;
     font-style: italic;
-    font-size: 3rem;
-    line-height: 3rem;
     margin-bottom: 20px;
+    display: block;
   }
 
   h2 {

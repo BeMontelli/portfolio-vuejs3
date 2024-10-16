@@ -1,10 +1,9 @@
 <script>
 export default {
-  data() {
-    return {
-      title: 'Benjamin Montellimard',
-      dateCreated: '',
-      dateupdated: ''
+  props: {
+    title: {
+      type: String,
+      required: true
     }
   },
   mounted() {
@@ -59,7 +58,7 @@ export default {
     position: relative;
     width: 100%;
     height: 100%;
-    padding: 45px 20px 80px 130px;
+    padding: 160px 20px 140px 20px;
     min-height: 190px;
     background-image: url('@/assets/img/montellimard-forest.jpg');
     background-size: cover;
@@ -67,6 +66,12 @@ export default {
     background-position: center;
     border-radius: 15px 15px 0 0;
     overflow: hidden;
+    @include responsiveTo(lg) {
+      padding: 160px 20px 60px 20px;
+    }
+    @include responsiveTo(sm) {
+      padding: 160px 20px 20px 20px;
+    }
     .code__overlay {
       pointer-events: none;
       z-index: 1;
@@ -85,15 +90,16 @@ export default {
       transform: scale(1.1);
     }
   }
-
-  h1 {
-    position: relative;
-    z-index: 2;
-    color: var(--color-main);
-  }
 }
 
 h1 {
+  word-break: break-word;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  color: var(--color-main);
   font-family: 'Nunito', sans-serif;
   font-weight: bolder;
   font-size: 50px;
