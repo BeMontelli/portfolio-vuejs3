@@ -11,7 +11,6 @@ https://tagmanager.google.com/?hl=fr#/home
 - responsive
 - projects part
 - skills part
-- theme switch local storage
 - links click animation and return to top
 - production direct page privacy policy 404
 
