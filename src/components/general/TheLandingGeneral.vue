@@ -4,6 +4,15 @@ export default {
     title: {
       type: String,
       required: true
+    },
+    subtitle: {
+      type: String,
+      required: false
+    },
+    typeclass: {
+      type: String,
+      required: false,
+      default: ''
     }
   },
   mounted() {
@@ -40,8 +49,9 @@ export default {
 <template>
   <div id="g__landing">
     <div class="g__landing__container">
-      <div class="g__landing__content">
+      <div class="g__landing__content" :class="typeclass">
         <h1>{{ title }}</h1>
+        <h2 v-if="subtitle">{{ subtitle }}</h2>
         <div class="code__overlay"></div>
       </div>
     </div>
@@ -49,6 +59,16 @@ export default {
 </template>
 
 <style scoped lang="scss">
+#g__landing .g__landing__content.big__landing {
+  padding: 180px 20px 240px 20px;
+  @include responsiveTo(lg) {
+    padding: 180px 20px 150px 20px;
+  }
+  @include responsiveTo(sm) {
+    padding: 180px 20px 110px 20px;
+  }
+}
+
 #g__landing {
   .g__landing__container {
     overflow: hidden;
@@ -58,7 +78,7 @@ export default {
     position: relative;
     width: 100%;
     height: 100%;
-    padding: 160px 20px 140px 20px;
+    padding: 180px 20px 140px 20px;
     min-height: 190px;
     background-image: url('@/assets/img/montellimard-forest.jpg');
     background-size: cover;
@@ -66,11 +86,13 @@ export default {
     background-position: center;
     border-radius: 15px 15px 0 0;
     overflow: hidden;
+    text-align: center;
+    color: var(--vt-c-white) !important;
     @include responsiveTo(lg) {
-      padding: 160px 20px 60px 20px;
+      padding: 180px 20px 60px 20px;
     }
     @include responsiveTo(sm) {
-      padding: 160px 20px 20px 20px;
+      padding: 180px 20px 20px 20px;
     }
     .code__overlay {
       pointer-events: none;
@@ -109,6 +131,10 @@ h1 {
     font-size: 35px;
     line-height: 35px;
   }
+}
+
+h2 {
+  font-weight: bolder !important;
 }
 
 body.scroll #g__landing .g__landing__content {

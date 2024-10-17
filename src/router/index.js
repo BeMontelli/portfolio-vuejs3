@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import PrivacyPolicy from '../views/PrivacyPolicy.vue'
+import ErrorPage404 from '../views/ErrorPage404.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,6 +18,11 @@ const router = createRouter({
       path: '/politique-de-confidentialite',
       name: 'privacy-policy',
       component: PrivacyPolicy
+    },
+    {
+      path: '/:pathMatch(.*)*', // Capturer toutes les autres routes
+      name: 'error404',
+      component: ErrorPage404
     }
   ]
 })
