@@ -1,5 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
+import { themeSelectStore } from '@/stores/themeSelect'
+const themeSelect = themeSelectStore()
 
 const isDarkMode = ref(
   window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -13,17 +15,24 @@ const toggleTheme = () => {
 const goLight = () => {
   document.documentElement.classList.remove('dark')
   isDarkMode.value = false
+  themeSelect.setTheme('light')
 }
 const goDark = () => {
   document.documentElement.classList.add('dark')
   isDarkMode.value = true
+  themeSelect.setTheme('dark')
 }
 
 onMounted(() => {
   const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
 
-  if (mediaQuery.matches) goDark()
-  else goLight
+  if (themeSelect.getTheme !== null) {
+    if (themeSelect.getTheme === 'dark') goDark()
+    else goLight
+  } else {
+    if (mediaQuery.matches) goDark()
+    else goLight
+  }
 
   mediaQuery.addEventListener('change', (e) => {
     if (e.matches) goDark()
