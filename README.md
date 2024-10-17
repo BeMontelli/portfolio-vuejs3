@@ -11,7 +11,6 @@ https://tagmanager.google.com/?hl=fr#/home
 - responsive
 - projects part
 - skills part
-- production direct page privacy policy 404
 
 ## Inspiration
 
