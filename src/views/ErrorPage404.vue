@@ -1,8 +1,13 @@
 <script setup>
+import { ref } from 'vue'
 import HeaderGeneral from '../components/general/HeaderGeneral.vue'
 import LoaderSite from '../components/LoaderSite.vue'
 import TheLandingGeneral from '../components/general/TheLandingGeneral.vue'
 import FooterGeneral from '../components/general/FooterGeneral.vue'
+
+const title = ref('Oops !')
+const subtitle = ref("Erreur 404... cliquez sur le logo pour revenir à l'accueil !")
+const typeclass = ref('big__landing')
 </script>
 
 <template>
@@ -11,11 +16,7 @@ import FooterGeneral from '../components/general/FooterGeneral.vue'
     <div class="app__content">
       <HeaderGeneral />
       <main>
-        <TheLandingGeneral
-          title="Oops !"
-          subtitle="Error 404... click logo to go home !"
-          typeclass="big__landing"
-        />
+        <TheLandingGeneral :title="title" :subtitle="subtitle" :typeclass="typeclass" />
         <div class="section__texts">
           <div class="container"></div>
         </div>
