@@ -372,7 +372,7 @@ const experiences = [
     &.fade {
       .dates__role {
         background-color: var(--color-background-halfpure);
-        color: var(--vt-c-white);
+        color: var(--color-text);
       }
     }
   }
