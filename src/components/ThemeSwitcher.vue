@@ -28,15 +28,15 @@ onMounted(() => {
 
   if (themeSelect.getTheme !== null) {
     if (themeSelect.getTheme === 'dark') goDark()
-    else goLight
+    else goLight()
   } else {
     if (mediaQuery.matches) goDark()
-    else goLight
+    else goLight()
   }
 
   mediaQuery.addEventListener('change', (e) => {
     if (e.matches) goDark()
-    else goLight
+    else goLight()
   })
 })
 </script>
