@@ -13,7 +13,6 @@ https://tagmanager.google.com/?hl=fr#/home
 - skills part
 - loader link out animation
 - light mode career alt display bg/font
-- 404 page data => vars
 
 ## Inspiration
 
