@@ -14,7 +14,6 @@ https://tagmanager.google.com/?hl=fr#/home
 - loader link out animation
 - light mode career alt display bg/font
 - 404 page data => vars
-- theme light on load sun instead of moon 'double clic change'
 
 ## Inspiration
 
