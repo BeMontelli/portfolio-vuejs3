@@ -5,6 +5,7 @@ import FooterGeneral from '../components/general/FooterGeneral.vue'
 import TheLandingHome from '../components/home/TheLandingHome.vue'
 import WhoHome from '../components/home/WhoHome.vue'
 import CareerHome from '../components/home/CareerHome.vue'
+import SkillsHome from '../components/home/SkillsHome.vue'
 import { useHead } from '@unhead/vue'
 
 useHead({
@@ -53,6 +54,7 @@ useHead({
         <TheLandingHome />
         <WhoHome />
         <CareerHome />
+        <SkillsHome />
       </main>
       <FooterGeneral />
     </div>
