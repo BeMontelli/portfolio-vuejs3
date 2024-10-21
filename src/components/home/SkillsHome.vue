@@ -60,11 +60,11 @@ const skills = [
         id="Calque_1"
         data-name="Calque 1"
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 754.11 86.74"
+        viewBox="0 0 754.11 110"
       >
         <path
           d="M55.34,136.73A327.4,327.4,0,0,1,184.91,60c24.39-7.59,50.19-12.32,75.48-8.76,49.65,7,88.87,43.9,132.54,68.54,15,8.49,31.34,15.73,48.59,16.43,21.34.86,41.66-8.29,61.05-17.25L580,83.16C613.64,67.59,649,51.67,686.08,53.54c46.46,2.33,86.49,31.9,123.36,60.25"
-          transform="translate(-55.34 -49.99)"
+          transform="translate(-55.34 -35)"
           id="number-two"
           style="fill: none"
         />
@@ -73,10 +73,29 @@ const skills = [
             alignment-baseline="center"
             xlink:href="#number-two"
             id="text-path"
+            text-anchor="start"
+            startOffset="0"
+          >
+            &nbsp;• Compétences • Compétences • Compétences • Compétences • Compétences •
+            Compétences • Compétences • Compétences
+            <animate
+              attributeName="startOffset"
+              from="0%"
+              to="100%"
+              begin="0s"
+              dur="20s"
+              repeatCount="indefinite"
+            />
+          </textPath>
+          <textPath
+            alignment-baseline="center"
+            xlink:href="#number-two"
+            id="text-path"
             text-anchor="end"
             startOffset="0"
           >
-            Compétences • Compétences • Compétences • Compétences • Compétences •
+            • Compétences • Compétences • Compétences • Compétences • Compétences • Compétences •
+            Compétences • Compétences
             <animate
               attributeName="startOffset"
               from="0%"
