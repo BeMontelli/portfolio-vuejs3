@@ -60,23 +60,23 @@ const skills = [
         id="Calque_1"
         data-name="Calque 1"
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 669.06 121.54"
+        viewBox="0 0 754.11 86.74"
       >
         <path
-          d="M719.28,77.58C674.41,100,627.82,122.93,577.7,125.05c-42.67,1.8-84.49-11.71-124-28s-78-35.52-119.35-46.22S247.48,38.7,209.1,57.43C180,71.64,157.45,96.07,133.66,118.05S82.4,160.8,50.22,164.56"
-          transform="translate(-50.22 -43.02)"
+          d="M55.34,136.73A327.4,327.4,0,0,1,184.91,60c24.39-7.59,50.19-12.32,75.48-8.76,49.65,7,88.87,43.9,132.54,68.54,15,8.49,31.34,15.73,48.59,16.43,21.34.86,41.66-8.29,61.05-17.25L580,83.16C613.64,67.59,649,51.67,686.08,53.54c46.46,2.33,86.49,31.9,123.36,60.25"
+          transform="translate(-55.34 -49.99)"
           id="number-two"
           style="fill: none"
         />
-        <text width="100%" fill="black">
+        <text width="100%" fill="var(--color-main)">
           <textPath
             alignment-baseline="center"
             xlink:href="#number-two"
             id="text-path"
-            text-anchor="start"
+            text-anchor="end"
             startOffset="0"
           >
-            Compétences •
+            Compétences • Compétences • Compétences • Compétences • Compétences •
             <animate
               attributeName="startOffset"
               from="0%"
@@ -93,6 +93,11 @@ const skills = [
 </template>
 
 <style scoped lang="scss">
+#text-path {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-family: var(--font-nunito);
+}
 #home__skills {
   position: relative;
   padding: 160px 0 60px;
