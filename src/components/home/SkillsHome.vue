@@ -1,15 +1,37 @@
 <script setup>
 const skills = [
   {
-    bg: '2013',
-    logo: new URL('@/assets/img/courses-exp.jpg', import.meta.url).href,
-    role: '2013 - 2016 • Étudiant en programmation',
-    actionsTitle: 'Parcours',
-    actions: [
-      '[2010-2012] Baccalauréat STI2D',
-      "[2013-2015] DUT Métiers du Multimédia et de l'Internet",
-      "[2015-2016] LP Métiers du Multimédia et de l'Internet"
-    ]
+    title: 'PHP'
+  },
+  {
+    title: 'JavaScript'
+  },
+  {
+    title: 'HTML'
+  },
+  {
+    title: 'CSS'
+  },
+  {
+    title: 'SCSS'
+  },
+  {
+    title: 'SQL'
+  },
+  {
+    title: 'Docker'
+  },
+  {
+    title: 'Symfony'
+  },
+  {
+    title: 'Laravel'
+  },
+  {
+    title: 'VueJs'
+  },
+  {
+    title: 'Git'
   }
 ]
 </script>
@@ -20,37 +42,9 @@ const skills = [
       <h2 data-aos="fade-up" class="font__sourceserif4">Mes compétences</h2>
       <div class="skills">
         <ul class="skills__list">
-          <li
-            v-for="skill in skills"
-            :key="skill.year"
-            class="skill"
-            :class="skill.fade ? 'fade' : 'classic'"
-            data-aos="fade-up"
-          >
-            <span class="deco__bg" aria-hidden="true">{{ skill.bg }}</span>
-            <div class="img" :data-aos="skill.year % 2 === 0 ? 'fade-right' : 'fade-left'">
-              <img :src="skill.logo" :alt="'Logo ' + skill.company" />
-            </div>
-            <div class="txts">
-              <h3>{{ skill.company }}</h3>
-              <span class="dates__role">{{ skill.role }}</span>
-              <div class="context">
-                <span class="section__title">{{ skill.contextTitle }}</span>
-                <div v-html="skill.contextDescription"></div>
-              </div>
-              <div class="actions" v-if="skill.actions">
-                <span class="section__title">{{ skill.actionsTitle }}</span>
-                <ul>
-                  <li v-for="action in skill.actions" :key="action">{{ action }}</li>
-                </ul>
-              </div>
-              <div class="env" v-if="skill.envDetails">
-                <span class="section__title">{{ skill.envTitle }}</span>
-                <p>{{ skill.envDescription }}</p>
-                <ul>
-                  <li v-for="env in skill.envDetails" :key="env">{{ env }}</li>
-                </ul>
-              </div>
+          <li v-for="skill in skills" :key="skill.year" class="skill" data-aos="fade-up">
+            <div class="skill_in">
+              <strong>{{ skill.title }}</strong>
             </div>
           </li>
         </ul>
@@ -181,168 +175,42 @@ const skills = [
       list-style: none;
       padding: 0;
       margin: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
 
   .skill {
     position: relative;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 40px;
-    @include responsiveTo(md) {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+    width: auto;
+    padding: 0px 15px;
+    margin: 3px;
+    background-color: var(--color-background-halfpure);
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--color-text);
+    transition: all 0.5s ease-in;
+    &:hover {
+      background-color: var(--color-main);
+      color: var(--vt-c-black) !important;
+      transition: all 0.5s ease-in;
     }
-    &:last-child {
-      margin-bottom: 0;
-    }
-    &:nth-child(even) {
-      flex-direction: row-reverse;
-      @include responsiveTo(md) {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-      .img {
-        margin-right: 0;
-        margin-left: 40px;
-        @include responsiveTo(md) {
-          margin-left: 0;
-        }
-      }
-      .txts {
-        text-align: right;
-        @include responsiveTo(md) {
-          text-align: center;
-        }
-        li {
-          padding-right: 10px;
-          &:before {
-            content: '•';
-            right: 0;
-          }
-          @include responsiveTo(md) {
-            padding-right: 0;
-            padding-left: 10px;
-            &:before {
-              right: inherit;
-            }
-          }
-        }
-      }
-    }
-    .deco__bg {
-      position: absolute;
-      left: 50%;
-      top: 0;
-      font-weight: bolder;
-      font-size: 10rem;
-      line-height: 7rem;
-      color: var(--color-text);
-      pointer-events: none;
-      z-index: 0;
-      opacity: 0.2;
-      transform: translateX(-50%);
-      @include responsiveTo(md) {
-        top: 260px;
-        line-height: 5rem;
-      }
-    }
-    .img {
+    .skill__in {
       position: relative;
-      z-index: 1;
-      border-radius: 100%;
-      width: 220px;
-      height: 220px;
-      overflow: hidden;
-      margin-right: 40px;
-      @include responsiveTo(md) {
-        margin-bottom: 20px;
-        margin-right: 0;
-      }
-      img {
-        height: 100%;
-        width: 100%;
-      }
     }
-    .txts {
-      position: relative;
-      z-index: 1;
-      width: calc(100% - 220px - 40px);
-      @include responsiveTo(md) {
-        width: 100%;
-        text-align: center;
-      }
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-      p {
-        @include responsiveTo(md) {
-          display: block;
-          text-align: left;
-        }
-      }
-      li {
-        padding-left: 10px;
-        position: relative;
-        &:before {
-          content: '•';
-          position: absolute;
-          display: block;
-          color: var(--color-main);
-          top: 0;
-          left: 0;
-        }
-        @include responsiveTo(md) {
-          display: block;
-          text-align: left;
-        }
-      }
-    }
-    h3 {
+    strong {
       position: relative;
       font-weight: bolder;
       font-style: italic;
       font-size: 1.5rem;
-      color: var(--color-main);
-      margin-bottom: 5px;
-      @include responsiveTo(md) {
-        text-align: center;
-        margin-bottom: 10px;
-      }
     }
-    .dates__role {
-      position: relative;
-      background-color: var(--color-main);
-      padding: 5px 10px;
-      display: inline-block;
-      font-weight: bolder;
-      margin-bottom: 10px;
-      border-radius: 5px;
-      color: var(--vt-c-black);
-    }
-    .context {
-      margin-top: 20px;
-      position: relative;
-    }
-    .actions {
-      margin-top: 20px;
-      position: relative;
-    }
-    .env {
-      position: relative;
-      margin-top: 20px;
-    }
+  }
 
-    &.fade {
-      .dates__role {
-        background-color: var(--color-background-halfpure);
-        color: var(--color-text);
-      }
-    }
+  .skills:has(.skill:hover) .skill:not(:hover) {
+    opacity: 0.5;
+    transition: all 0.5s ease-in;
   }
 }
 </style>
