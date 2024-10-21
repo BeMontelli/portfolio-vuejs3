@@ -4,6 +4,43 @@ import LoaderSite from '../components/LoaderSite.vue'
 import TheLandingGeneral from '../components/general/TheLandingGeneral.vue'
 import FooterGeneral from '../components/general/FooterGeneral.vue'
 import SectionTexts from '../components/general/SectionTexts.vue'
+import { useHead } from '@unhead/vue'
+
+useHead({
+  title: 'Politique de confidentialité - Montellimard Benjamin',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Montellimard Benjamin, développeur Web spécialisé en PHP et JavaScript. Explorez mes projets, compétences, et expériences.'
+    },
+    {
+      name: 'keywords',
+      content:
+        'Montellimard Benjamin, développeur web, PHP, JavaScript, développeur full-stack, portfolio, développement web, programmation, Lyon, Haute-Loire, Clermont-Ferrand, Le Puy-en-Velay, Rhêne'
+    },
+    { name: 'author', content: 'Montellimard Benjamin' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://montellimard.fr/' },
+    { property: 'og:title', content: 'Politique de confidentialité - Montellimard Benjamin' },
+    {
+      property: 'og:description',
+      content:
+        'Découvrez mes projets et compétences en développement web, notamment en PHP et JavaScript.'
+    },
+    { property: 'og:image', content: 'https://montellimard.fr/montellimard-preview.png' },
+    { property: 'twitter:card', content: 'summary_large_image' },
+    { property: 'twitter:url', content: 'https://montellimard.fr/' },
+    { property: 'twitter:title', content: 'Politique de confidentialité - Montellimard Benjamin' },
+    {
+      property: 'twitter:description',
+      content: 'Explorez mon portfolio de développeur Web, spécialisé en PHP et JavaScript.'
+    },
+    { property: 'twitter:image', content: 'https://montellimard.fr/montellimard-preview.png' },
+    { name: 'robots', content: 'index, follow' }
+  ],
+  link: [{ rel: 'canonical', href: 'https://montellimard.fr/' }]
+})
 </script>
 
 <template>

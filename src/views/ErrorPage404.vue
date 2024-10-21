@@ -5,6 +5,42 @@ import LoaderSite from '../components/LoaderSite.vue'
 import TheLandingGeneral from '../components/general/TheLandingGeneral.vue'
 import FooterGeneral from '../components/general/FooterGeneral.vue'
 
+import { useHead } from '@unhead/vue'
+
+useHead({
+  title: '404 - Erreur - Montellimard Benjamin',
+  meta: [
+    {
+      name: 'description',
+      content: "Page d'erreur 404, la page que vous cherchez n'existe plus."
+    },
+    {
+      name: 'keywords',
+      content:
+        '404, erreur, Montellimard Benjamin, développeur web, PHP, JavaScript, développeur full-stack, portfolio, développement web, programmation, Lyon, Haute-Loire, Clermont-Ferrand, Le Puy-en-Velay, Rhêne'
+    },
+    { name: 'author', content: 'Montellimard Benjamin' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://montellimard.fr/' },
+    { property: 'og:title', content: '404 - Erreur - Montellimard Benjamin' },
+    {
+      property: 'og:description',
+      content: "Page d'erreur 404, la page que vous cherchez n'existe plus."
+    },
+    { property: 'og:image', content: 'https://montellimard.fr/montellimard-preview.png' },
+    { property: 'twitter:card', content: 'summary_large_image' },
+    { property: 'twitter:url', content: 'https://montellimard.fr/' },
+    { property: 'twitter:title', content: '404 - Erreur - Montellimard Benjamin' },
+    {
+      property: 'twitter:description',
+      content: "Page d'erreur 404, la page que vous cherchez n'existe plus."
+    },
+    { property: 'twitter:image', content: 'https://montellimard.fr/montellimard-preview.png' },
+    { name: 'robots', content: 'index, follow' }
+  ],
+  link: [{ rel: 'canonical', href: 'https://montellimard.fr/' }]
+})
+
 const title = ref('Oops !')
 const subtitle = ref("Erreur 404... cliquez sur le logo pour revenir à l'accueil !")
 const typeclass = ref('big__landing')

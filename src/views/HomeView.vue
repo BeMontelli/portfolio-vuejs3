@@ -5,15 +5,43 @@ import FooterGeneral from '../components/general/FooterGeneral.vue'
 import TheLandingHome from '../components/home/TheLandingHome.vue'
 import WhoHome from '../components/home/WhoHome.vue'
 import CareerHome from '../components/home/CareerHome.vue'
-</script>
+import { useHead } from '@unhead/vue'
 
-<script>
-export default {
-  mounted() {
-    // Ajouter une classe au body lors du chargement
-    //document.body.classList.add('scroll')
-  }
-}
+useHead({
+  title: 'Montellimard Benjamin - Développeur Web PHP et JS',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Montellimard Benjamin, développeur Web spécialisé en PHP et JavaScript. Explorez mes projets, compétences, et expériences.'
+    },
+    {
+      name: 'keywords',
+      content:
+        'Montellimard Benjamin, développeur web, PHP, JavaScript, développeur full-stack, portfolio, développement web, programmation, Lyon, Haute-Loire, Clermont-Ferrand, Le Puy-en-Velay, Rhêne'
+    },
+    { name: 'author', content: 'Montellimard Benjamin' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://montellimard.fr/' },
+    { property: 'og:title', content: 'Montellimard Benjamin - Développeur Web PHP et JS' },
+    {
+      property: 'og:description',
+      content:
+        'Découvrez mes projets et compétences en développement web, notamment en PHP et JavaScript.'
+    },
+    { property: 'og:image', content: 'https://montellimard.fr/montellimard-preview.png' },
+    { property: 'twitter:card', content: 'summary_large_image' },
+    { property: 'twitter:url', content: 'https://montellimard.fr/' },
+    { property: 'twitter:title', content: 'Montellimard Benjamin - Développeur Web PHP et JS' },
+    {
+      property: 'twitter:description',
+      content: 'Explorez mon portfolio de développeur Web, spécialisé en PHP et JavaScript.'
+    },
+    { property: 'twitter:image', content: 'https://montellimard.fr/montellimard-preview.png' },
+    { name: 'robots', content: 'index, follow' }
+  ],
+  link: [{ rel: 'canonical', href: 'https://montellimard.fr/' }]
+})
 </script>
 
 <template>
