@@ -132,6 +132,16 @@
 .section__texts {
   position: relative;
   padding-top: 40px;
+  --mask: radial-gradient(134.16px at 50% 180px, #000 99%, #0000 101%) calc(50% - 120px) 0/240px
+      100%,
+    radial-gradient(134.16px at 50% -120px, #0000 99%, #000 101%) 50% 60px/240px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  margin: -90px 0 0;
+  padding-top: 120px;
+  background-color: var(--color-background-alt);
+  position: relative;
+  z-index: 2;
 
   .privacy-policy-info {
     opacity: 0.65;

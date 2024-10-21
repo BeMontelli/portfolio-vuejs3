@@ -81,6 +81,7 @@ const typeclass = ref('big__landing')
 #mainfooter {
   z-index: 10;
   position: relative;
+  background-color: var(--color-background-alt) !important;
 }
 
 #g__landing {

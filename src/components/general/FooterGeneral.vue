@@ -46,7 +46,7 @@ footer#mainfooter {
   display: flex;
   flex-direction: column;
   padding: 120px 20px 20px;
-  background-color: var(--color-background-alt);
+  background-color: var(--color-background);
   border-radius: 0 0 15px 15px;
   --mask: radial-gradient(134.16px at 50% 180px, #000 99%, #0000 101%) calc(50% - 120px) 0/240px
       100%,

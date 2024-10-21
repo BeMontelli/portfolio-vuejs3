@@ -166,7 +166,9 @@ const experiences = [
 <style scoped lang="scss">
 #home__career {
   position: relative;
-  padding: 60px 0;
+  padding: 120px 0 130px;
+  background-color: var(--color-background);
+  margin: 0 0 -80px;
   h2 {
     text-align: center;
     font-weight: bolder;

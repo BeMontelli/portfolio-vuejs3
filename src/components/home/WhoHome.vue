@@ -48,7 +48,7 @@ const profileData = {
 #home__who {
   position: relative;
   padding: 140px 0 120px;
-  margin-bottom: -120px;
+  margin: 0px 0 -160px;
   background-color: var(--color-background-alt);
   --mask: radial-gradient(134.16px at 50% 180px, #000 99%, #0000 101%) calc(50% - 120px) 0/240px 51%
       repeat-x,

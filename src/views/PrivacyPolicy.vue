@@ -87,7 +87,7 @@ body {
   padding: 15px;
 }
 .app__content {
-  background-color: var(--color-background);
+  background-color: var(--color-background-alt);
   border-radius: 15px;
   height: calc(100svh - 30px);
   height: calc(100vh - 30px);
