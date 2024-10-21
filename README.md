@@ -12,7 +12,6 @@ https://tagmanager.google.com/?hl=fr#/home
 - projects part
 - skills part
 - loader link out animation
-- pages metas
 
 ## Inspiration
 
