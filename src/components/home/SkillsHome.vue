@@ -68,7 +68,7 @@ const skills = [
           id="number-two"
           style="fill: none"
         />
-        <text width="100%" fill="var(--color-main)">
+        <text width="100%">
           <textPath
             alignment-baseline="center"
             xlink:href="#number-two"
@@ -76,8 +76,8 @@ const skills = [
             text-anchor="start"
             startOffset="0"
           >
-            &nbsp;• Compétences • Compétences • Compétences • Compétences • Compétences •
-            Compétences • Compétences • Compétences
+            &nbsp;• Compétences1 • Compétences2 • Compétences3 • Compétences4 • Compétences5 •
+            Compétences6
             <animate
               attributeName="startOffset"
               from="0%"
@@ -90,12 +90,12 @@ const skills = [
           <textPath
             alignment-baseline="center"
             xlink:href="#number-two"
-            id="text-path"
+            id="text-path-bis"
             text-anchor="end"
             startOffset="0"
           >
-            • Compétences • Compétences • Compétences • Compétences • Compétences • Compétences •
-            Compétences • Compétences
+            • Compétences1 • Compétences2 • Compétences3 • Compétences4 • Compétences5 •
+            Compétences6
             <animate
               attributeName="startOffset"
               from="0%"
@@ -116,6 +116,13 @@ const skills = [
   text-transform: uppercase;
   font-weight: bolder;
   font-family: var(--font-nunito);
+  fill: red;
+}
+#text-path-bis {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-family: var(--font-nunito);
+  fill: orange;
 }
 #home__skills {
   position: relative;
