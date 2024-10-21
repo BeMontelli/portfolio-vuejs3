@@ -92,7 +92,7 @@ export default {
     font-weight: bold;
     font-size: 3rem;
     pointer-events: none;
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--font-nunito);
     font-weight: bolder;
     font-size: 80px;
     letter-spacing: -42px;
@@ -255,7 +255,7 @@ export default {
 }
 
 h1 {
-  font-family: 'Nunito', sans-serif;
+  font-family: var(--font-nunito);
   font-weight: bolder;
   font-size: 50px;
   line-height: 50px;
@@ -267,7 +267,7 @@ h1 {
 }
 h2 {
   position: relative;
-  font-family: 'Source Serif 4', serif;
+  font-family: var(--font-source);
   font-weight: bold;
   font-size: 35px;
   margin: 30px auto;
@@ -305,7 +305,7 @@ ul {
 ul li {
   font-size: 25px;
   line-height: 30px;
-  font-family: 'Inconsolata', sans-serif;
+  font-family: var(--font-inconsolata);
   margin-right: 10px;
 }
 
