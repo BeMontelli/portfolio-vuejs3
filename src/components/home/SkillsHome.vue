@@ -1,10 +1,30 @@
 <script setup>
-const skills = [
+const mainSkills = [
   {
     title: 'PHP'
   },
   {
     title: 'JavaScript'
+  },
+  {
+    title: 'Symfony'
+  },
+  {
+    title: 'Laravel'
+  },
+  {
+    title: 'VueJs'
+  }
+]
+const skills = [
+  {
+    title: 'Docker'
+  },
+  {
+    title: 'TypeScript'
+  },
+  {
+    title: 'Angular.js'
   },
   {
     title: 'HTML'
@@ -16,30 +36,72 @@ const skills = [
     title: 'SCSS'
   },
   {
+    title: 'Tailwind CSS'
+  },
+  {
+    title: 'Bootstrap CSS'
+  },
+  {
     title: 'SQL'
   },
   {
-    title: 'Docker'
-  },
-  {
-    title: 'Symfony'
-  },
-  {
-    title: 'Laravel'
-  },
-  {
-    title: 'VueJs'
+    title: 'Postman'
   },
   {
     title: 'Git'
+  },
+  {
+    title: 'GitLab'
+  },
+  {
+    title: 'Wordpress'
+  },
+  {
+    title: 'Prestashop'
+  },
+  {
+    title: 'Drupal'
+  },
+  {
+    title: 'Magento'
+  },
+  {
+    title: 'Photoshop'
+  },
+  {
+    title: 'Illustrator'
+  },
+  {
+    title: 'InDesign'
+  },
+  {
+    title: 'Google analytics'
+  },
+  {
+    title: 'Google Tag Manager'
+  },
+  {
+    title: 'Redmine'
   }
 ]
+const skillsstring =
+  '• Compétences • Compétences • Compétences • Compétences • Compétences • Compétences'
 </script>
 
 <template>
   <div id="home__skills">
     <div class="narrow__container">
       <h2 data-aos="fade-up" class="font__sourceserif4">Mes compétences</h2>
+      <div class="skills">
+        <ul class="skills__list">
+          <li v-for="skill in mainSkills" :key="skill.year" class="skill" data-aos="fade-up">
+            <div class="skill_in">
+              <strong>{{ skill.title }}</strong>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <h3 data-aos="fade-up" class="font__sourceserif4">Compétences supplémentaires</h3>
       <div class="skills">
         <ul class="skills__list">
           <li v-for="skill in skills" :key="skill.year" class="skill" data-aos="fade-up">
@@ -50,17 +112,22 @@ const skills = [
         </ul>
       </div>
     </div>
+
     <svg
+      version="1.1"
       id="bg__txt__wave"
-      data-name="Calque 1"
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 754.11 110"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px"
+      y="0px"
+      viewBox="0 0 754.1 110"
+      style="enable-background: new 0 0 754.1 110"
+      xml:space="preserve"
     >
       <path
-        d="M55.34,136.73A327.4,327.4,0,0,1,184.91,60c24.39-7.59,50.19-12.32,75.48-8.76,49.65,7,88.87,43.9,132.54,68.54,15,8.49,31.34,15.73,48.59,16.43,21.34.86,41.66-8.29,61.05-17.25L580,83.16C613.64,67.59,649,51.67,686.08,53.54c46.46,2.33,86.49,31.9,123.36,60.25"
-        transform="translate(-55.34 -35)"
-        id="number-two"
         style="fill: none"
+        id="number-two"
+        d="M4.7,19.6c93.2,0,93.2,80,186.5,80c93.2,0,93.2-80,186.5-80c93.2,0,93.2,80,186.5,80s93.2-80,186.5-80"
       />
       <text width="100%">
         <textPath
@@ -69,8 +136,9 @@ const skills = [
           id="text-path"
           text-anchor="start"
           startOffset="0"
+          aria-hidden="true"
         >
-          &nbsp;• Compétences • Compétences • Compétences • Compétences • Compétences • Compétences
+          &nbsp{{ skillsstring }}
           <animate
             attributeName="startOffset"
             from="0%"
@@ -86,8 +154,9 @@ const skills = [
           id="text-path-bis"
           text-anchor="end"
           startOffset="0"
+          aria-hidden="true"
         >
-          • Compétences • Compétences • Compétences • Compétences • Compétences • Compétences
+          {{ skillsstring }}
           <animate
             attributeName="startOffset"
             from="0%"
@@ -111,7 +180,7 @@ const skills = [
   transform: translateX(-50%) translateY(-50%);
   z-index: 0;
   opacity: 0.5;
-  width: 100%;
+  width: calc(100% + 40px);
   @include responsiveTo(xxl) {
     width: 1450px;
   }
@@ -121,14 +190,14 @@ const skills = [
   font-weight: bolder;
   font-family: var(--font-nunito);
   fill: var(--color-text);
-  font-size: 15.25px;
+  font-size: 16.35px;
 }
 #text-path-bis {
   text-transform: uppercase;
   font-weight: bolder;
   font-family: var(--font-nunito);
   fill: var(--color-text);
-  font-size: 15.25px;
+  font-size: 16.35px;
 }
 #home__skills {
   position: relative;
@@ -148,12 +217,24 @@ const skills = [
     font-style: italic;
     font-size: 3rem;
     line-height: 3rem;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     z-index: 1;
     color: var(--color-main);
     @include responsiveTo(xl) {
       font-size: 2rem;
+      line-height: 2.5rem;
     }
+  }
+  h3 {
+    position: relative;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin: 70px auto 40px;
+    z-index: 1;
+    color: var(--color-main);
   }
   strong {
     font-weight: bolder;
