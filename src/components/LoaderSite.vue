@@ -20,12 +20,7 @@ onMounted(() => {
 
 <template>
   <div id="loadingsite">
-    <svg
-      class="logo"
-      :class="{ scroll: isScrolled }"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 326.13 500"
-    >
+    <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 326.13 500">
       <title>logo Montellimard</title>
       <path
         style="fill: #e8af2c"
