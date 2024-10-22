@@ -1,4 +1,5 @@
 <script setup>
+// src\router\index.js // Router config for loader
 import { onMounted } from 'vue'
 
 onMounted(() => {

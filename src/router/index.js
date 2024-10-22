@@ -27,6 +27,7 @@ const router = createRouter({
   ]
 })
 
+// loader config
 router.beforeEach((to, from, next) => {
   const loadingElement = document.getElementById('loadingsite')
   if (loadingElement) {
