@@ -27,4 +27,17 @@ const router = createRouter({
   ]
 })
 
+router.beforeEach((to, from, next) => {
+  const loadingElement = document.getElementById('loadingsite')
+  if (loadingElement) {
+    loadingElement.classList.remove('load__done')
+    loadingElement.classList.remove('onload')
+    setTimeout(() => {
+      next()
+    }, 500)
+  } else {
+    next()
+  }
+})
+
 export default router

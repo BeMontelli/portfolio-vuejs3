@@ -51,8 +51,12 @@ onMounted(() => {
   }
   &.load__done {
     opacity: 0;
-    transition: 0.5s all ease-in;
+    height: 0;
     pointer-events: none;
+    .logo {
+      top: 30%;
+      opacity: 0;
+    }
   }
 }
 
