@@ -10,7 +10,6 @@ https://tagmanager.google.com/?hl=fr#/home
 
 - responsive
 - projects part
-- loader link out animation
 
 ## Inspiration
 
