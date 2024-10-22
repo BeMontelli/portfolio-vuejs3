@@ -105,6 +105,10 @@ ul {
       color: var(--color-main);
       transition: all 0.5s ease;
     }
+    &.router-link-active {
+      pointer-events: none;
+      text-decoration: underline !important;
+    }
   }
 }
 
