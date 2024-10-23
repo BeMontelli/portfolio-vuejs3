@@ -82,6 +82,9 @@ const skills = [
   },
   {
     title: 'Redmine'
+  },
+  {
+    title: 'BrowserStack'
   }
 ]
 const skillsstring =
