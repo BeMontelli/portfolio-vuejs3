@@ -9,12 +9,12 @@ import SkillsHome from '../components/home/SkillsHome.vue'
 import { useHead } from '@unhead/vue'
 
 useHead({
-  title: 'Montellimard Benjamin - Développeur Web PHP et JS',
+  title: 'Montellimard Benjamin - Développeur Web PHP et JavaScript',
   meta: [
     {
       name: 'description',
       content:
-        'Montellimard Benjamin, développeur Web spécialisé en PHP et JavaScript. Explorez mes projets, compétences, et expériences.'
+        'Montellimard Benjamin, développeur Web du Puy-en-Velay (43) spécialisé PHP / JavaScript sur Lyon (69). Projets, compétences, & expériences de développement web.'
     },
     {
       name: 'keywords',
