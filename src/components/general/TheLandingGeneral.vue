@@ -89,10 +89,7 @@ export default {
     text-align: center;
     color: var(--vt-c-white) !important;
     @include responsiveTo(lg) {
-      padding: 180px 20px 60px 20px;
-    }
-    @include responsiveTo(sm) {
-      padding: 180px 20px 20px 20px;
+      padding: 180px 20px 80px 20px;
     }
     .code__overlay {
       pointer-events: none;
