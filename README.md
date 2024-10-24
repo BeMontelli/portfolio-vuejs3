@@ -11,10 +11,6 @@ https://tagmanager.google.com/?hl=fr#/home
 - responsive
 - projects part
 
-## Inspiration
-
-- https://fr.wix.com/blog/portfolios-artistes-designers-inspiration#viewer-h79ah6789298
-
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
