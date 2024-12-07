@@ -331,7 +331,7 @@ html.dark {
     opacity: 0.5;
   }
   #home__landing .col__right {
-    background-image: url('@/assets/img/montellimard-me.png');
+    background-image: url('@/assets/img/montellimard-me-dark.png');
   }
 }
 @media (prefers-color-scheme: dark) {
