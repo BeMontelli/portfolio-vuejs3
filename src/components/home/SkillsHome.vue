@@ -21,6 +21,12 @@ const skills = [
     title: 'Docker'
   },
   {
+    title: 'API Plateform'
+  },
+  {
+    title: 'AWS'
+  },
+  {
     title: 'TypeScript'
   },
   {
@@ -141,7 +147,7 @@ const skillsstring =
           startOffset="0"
           aria-hidden="true"
         >
-          &nbsp{{ skillsstring }}
+          &nbsp;{{ skillsstring }}
           <animate
             attributeName="startOffset"
             from="0%"
