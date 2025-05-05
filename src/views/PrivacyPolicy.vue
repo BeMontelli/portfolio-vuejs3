@@ -17,7 +17,7 @@ useHead({
     {
       name: 'keywords',
       content:
-        'Montellimard Benjamin, développeur web, PHP, JavaScript, développeur full-stack, portfolio, développement web, programmation, Lyon, Haute-Loire, Clermont-Ferrand, Le Puy-en-Velay, Rhêne'
+        'Montellimard Benjamin, développeur web, PHP, JavaScript, développeur full-stack, portfolio, développement web, programmation, Lyon, Haute-Loire, Clermont-Ferrand, Le Puy-en-Velay'
     },
     { name: 'author', content: 'Montellimard Benjamin' },
     { property: 'og:type', content: 'website' },

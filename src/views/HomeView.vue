@@ -14,12 +14,12 @@ useHead({
     {
       name: 'description',
       content:
-        'Montellimard Benjamin, développeur Web du Puy-en-Velay (43) spécialisé PHP / JavaScript sur Lyon (69). Projets, compétences, & expériences de développement web.'
+        'Montellimard Benjamin, développeur Web du Puy-en-Velay spécialisé PHP / JavaScript sur Clermont-Ferrand / Lyon . Projets, compétences, & expériences de développement web.'
     },
     {
       name: 'keywords',
       content:
-        'Montellimard Benjamin, développeur web, PHP, JavaScript, développeur full-stack, portfolio, développement web, programmation, Lyon, Haute-Loire, Clermont-Ferrand, Le Puy-en-Velay, Rhêne'
+        'Montellimard Benjamin, développeur web, PHP, JavaScript, développeur full-stack, portfolio, développement web, programmation, Lyon, Haute-Loire, Clermont-Ferrand, Le Puy-en-Velay'
     },
     { name: 'author', content: 'Montellimard Benjamin' },
     { property: 'og:type', content: 'website' },

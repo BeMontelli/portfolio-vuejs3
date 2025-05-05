@@ -6,7 +6,7 @@ const profileData = {
   paragraphs: [
     'Bonjour, je suis <strong>Benjamin Montellimard</strong>, développeur orienté web sur des langages du type <strong>PHP</strong> et <strong>Javascript</strong>.',
     'Originaire du <strong>Puy-en-Velay</strong> (43), je vis et travaille à <strong>Clermont-Ferrand</strong> (63) depuis maintenant cinq ans.',
-    'Actuellement, je recherche un poste à <strong>Lyon</strong> (69) en tant que développeur spécialisé dans des frameworks PHP comme <strong>Symfony</strong> ou <strong>Laravel</strong>. Avec une solide expérience dans ces environnements, je cherche à rejoindre une nouvelle équipe pour relever de nouveaux défis et contribuer à des projets web performants et évolutifs.'
+    'Actuellement, je recherche un poste à <strong>Clermont-Ferrand (63)</strong> ou <strong>Lyon</strong> (69) en tant que développeur spécialisé dans des frameworks PHP comme <strong>Symfony</strong> ou <strong>Laravel</strong>. Avec une solide expérience dans ces environnements, je cherche à rejoindre une nouvelle équipe pour relever de nouveaux défis et contribuer à des projets web performants et évolutifs.'
   ]
 }
 </script>

@@ -74,13 +74,13 @@ const experiences = [
     ]
   },
   {
-    bg: '2024',
+    bg: '2025',
     logo: new URL('@/assets/img/futur-exp.jpg', import.meta.url).href,
-    company: 'Développeur web à Lyon',
-    role: '2024 - ? • Développeur web',
+    company: 'Développeur web à Lyon ou Clermont-Ferrand',
+    role: '2025 - ? • Développeur web',
     contextTitle: 'Contexte',
     contextDescription:
-      "<p>Aujourd'hui je recherche un poste de développeur web sur Lyon.</p><p>Mon intention est de rejoindre une équipe travaillant sur des projets basés sur des frameworks Symfony ou Laravel.</p>"
+      "<p>Aujourd'hui je recherche un poste de développeur web sur Clermont-Ferrand ou Lyon.</p><p>Mon intention est de rejoindre une équipe travaillant sur des projets basés sur des frameworks Symfony ou Laravel.</p>"
   },
   {
     bg: 'Cours',
